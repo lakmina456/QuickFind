@@ -1,0 +1,54 @@
+{
+  "id": "ev_91b577fe8cf81a433ce314b6d5be8e14cf417e9ddaf895fc9c86c1a82ab20e45",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "-search <text>|-s <text>|-filter <name>"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401c66a0",
+        "references": [
+          {
+            "from": "0x140204450",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "\r\nEverything.exe [filename] [-options]\r\n\r\nfilename\tOpen the specified file list.\r\n\r\n-?\tShow this help.\r\n-admin\tRun \"Everything\" as Administrator.\r\n-admin-server-share-links\tUse \\\\Server\\C$ links for ETP connections.\r\n-app-data\tStore data in application data.\r\n-bookmark <name>\tOpen a bookmark.\r\n-case\tEnable case matching.\r\n-choose-language\tShow the language selection page.\r\n-choose-volumes\tDo not automatically index volumes.\r\n-close\tClose the current search window.\r\n-config <filename>\tThe filename of the ini file.\r\n-connect <user:pass@host:port>\tConnect to an ETP server.\r\n-console\tShow the debugging console.\r\n-copyto <filename1> <...>\tShow the multi-file renamer with the specified filenames.\r\n-create-file-list <filename> <path>\tCreate a file list of a path.\r\n-create-file-list-exclude-files <list>\texclude the semicolon delimited wildcard filter for files.\r\n-create-file-list-exclude-folders <list>\texclude the semicolon delimited wildcard filter for folders.\r\n-create-file-list-include-only-files <list>\tinclude only the semicolon delimited wildcard filter for files.\r\n-create-usn-journal <volume> <max-size-bytes> <allocation-delta-bytes>\r\n-db <filename>\tThe filename of the database.\r\n-debug\tShow the debugging console.\r\n-debug-log\tLog debugging information to disk\r\n-delete-usn-journal <volume>\tDelete a USN Journal.\r\n-details\tShow results in detail view.\r\n-diacritics\tEnable diacritics matching.\r\n-disable-run-as-admin\tDisable run as administrator.\r\n-disable-update-notification\tDisable update notification on startup.\r\n-drive-links\tUse C: links for ETP connections.\r\n-edit <filename>\tOpen a file list with the file list editor.\r\n-enable-run-as-admin\tEnable run as administrator.\r\n-enable-update-notification\tEnable update notification on startup.\r\n-exit\tExit \"Everything\".\r\n-first-instance\tOnly run if this is the first instance of \"Everything\".\r\n-filelist <filename>\tOpen a file list.\r\n-filename <filename>\tSearch for a file or folder by filename.\r\n-filter <name>\tSelect a search filter.\r\n-focus-bottom-result\tFocus the bottom result.\r\n-focus-last-run-result\tFocus the last run result.\r\n-focus-most-run-result\tFocus the most run result.\r\n-focus-results\tFocus the result list.\r\n-focus-top-result\tFocus the top result.\r\n-ftp-links\tUse ftp://host/C: links for ETP connections.\r\n-fullscreen\tShow the search window fullscreen.\r\n-h\tShow this help.\r\n-help\tShow this help.\r\n-home\tOpen the home search.\r\n-install <location>\tInstall \"Everything\" to a new location.\r\n-install-client-service\tInstall the \"Everything\" client as a service.\r\n-install-config <filename>\tInstall the specified ini file.\r\n-install-desktop-shortcut\tInstall desktop shortcut.\r\n-install-efu-association\tInstall EFU file association.\r\n-install-folder-context-menu\tInstall folder context menus.\r\n-install-quick-launch-shortcut\tInstall Quick Launch shortcut.\r\n-install-run-on-system-startup\tInstall \"Everything\" from the system startup.\r\n-install-service\tInstall and start the \"Everything\" service.\r\n-install-service-pipe-name <name>\tUse the specified name for the \"Everything\" service pipe name.\r\n-install-service-security-descriptor\tSpecify the pipe security descriptor.\r\n-install-start-menu-shortcuts\tInstall \"Everything\" shortcuts from the Start menu.\r\n-install-url-protocol\tInstall URL Protocol.\r\n-instance <name>\tThe name of the \"Everything\" instance.\r\n-l\tLoad the local database.\r\n-language <langID>\tSet the language to the specified language ID.\r\n-load-delay <milliseconds>\tThe delay in milliseconds before loading the database.\r\n-local\tLoad the local database.\r\n-matchpath\tEnable full path matching.\r\n-maximized\tMaximize the search window.\r\n-minimized\tMinimize the search window.\r\n-moveto <filename1> <...>\tShow the multi-file renamer with the specified filenames.\r\n-name-part <filename>\tSearch for the name part of a filename.\r\n-newwindow\tCreate a new search window.\r\n-noapp-data\tStore data in executable location.\r\n-nocase\tDisable case matching.\r\n-nodb\tDo not save to or load from the \"Everything\" database file.\r\n-nodiacritics\tDisable diacritics matching.\r\n-nofullscreen\tShow the search window in a window.\r\n-"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"-search <text>|-s <text>|-filter <name>\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

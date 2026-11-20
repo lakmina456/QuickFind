@@ -1,0 +1,45 @@
+{
+  "id": "ev_3141e75fc293cea3ad711e40f6aae40f2ac67a8f54a160bb4c6a7bcc72c41c7c",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "sub_140129380"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x140129380",
+    "function": "FUN_140129380",
+    "pseudo_code": "\r\n/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */\r\n\r\nvoid FUN_140129380(undefined8 *param_1,undefined8 param_2)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  int iVar3;\r\n  int iVar4;\r\n  char *pcVar5;\r\n  int iVar6;\r\n  int iVar7;\r\n  undefined4 uVar8;\r\n  longlong lVar9;\r\n  HCURSOR hCursor;\r\n  longlong lVar10;\r\n  char *pcVar11;\r\n  undefined8 uVar12;\r\n  char *pcVar13;\r\n  char *pcVar14;\r\n  int iVar15;\r\n  char *pcVar16;\r\n  char *pcVar17;\r\n  int iVar18;\r\n  int iVar19;\r\n  char *pcVar20;\r\n  char *pcVar21;\r\n  char *pcVar22;\r\n  undefined1 auStack_438 [32];\r\n  int local_418;\r\n  int local_408;\r\n  int local_404;\r\n  int local_400;\r\n  int local_3fc;\r\n  int local_3f8;\r\n  int local_3f4;\r\n  undefined8 *local_3f0;\r\n  char *local_3e8;\r\n  HCURSOR local_3e0;\r\n  undefined8 local_3d8;\r\n  undefined8 local_3d0;\r\n  undefined8 local_3c8;\r\n  undefined8 local_3c0;\r\n  undefined4 local_3b0;\r\n  undefined1 local_3a8 [8];\r\n  undefined8 local_3a0;\r\n  undefined1 local_288 [8];\r\n  char *local_280;\r\n  undefined1 local_168 [8];\r\n  undefined8 local_160;\r\n  ulonglong local_48;\r\n  \r\n  local_48 = DAT_14020ecd8 ^ (ulonglong)auStack_438;\r\n  local_3f0 = param_1;\r\n  local_3d8 = param_2;\r\n  lVar9 = FUN_14000d850(param_2);\r\n  if (lVar9 == 0) {\r\n    FUN_1400d5d80(*param_1,0x10,*(undefined8 *)(PTR_PTR_140202708 + 0x18c0),\r\n                  *(undefined8 *)(PTR_PTR_140202708 + 0x19e0));\r\n  }\r\n  else {\r\n    local_3fc = 0;\r\n    hCursor = LoadCursorW((HINSTANCE)0x0,(LPCWSTR)0x7f02);\r\n    local_3e0 = SetCursor(hCursor);\r\n    FUN_1400d5b80(param_1[3],0,*(undefined8 *)(PTR_PTR_140202708 + 0x19d8));\r\n    FUN_1401277b0(param_1);\r\n    FUN_14017e740(local_3a8);\r\n    FUN_14017e740(local_288);\r\n    FUN_14017ad30(local_3a8,param_2);\r\n    iVar15 = -1;\r\n    local_3f4 = -1;\r\n    local_3f8 = -1;\r\n    local_400 = -1;\r\n    local_408 = -1;\r\n    iVar19 = 0;\r\n    local_404 = -1;\r\n    lVar10 = FUN_14000d8e0(lVar9);\r\n    iVar7 = -1;\r\n    iVar2 = local_404;\r\n    iVar18 = local_3f4;\r\n    while (lVar10 != 0) {\r\n      iVar6 = FUN_1401700c0(lVar10,\"Filename\");\r\n      iVar18 = iVar19;\r\n      iVar2 = local_408;\r\n      iVar3 = local_400;\r\n      iVar4 = local_3f8;\r\n      if ((((iVar6 != 0) &&\r\n           (iVar6 = FUN_1401700c0(lVar10,&DAT_1401b7fa8), iVar18 = iVar7, iVar2 = local_408,\r\n           iVar3 = local_400, iVar4 = iVar19, iVar6 != 0)) &&\r\n          (iVar7 = FUN_1401700c0(lVar10,\"Date Modified\"), iVar2 = local_408, iVar3 = iVar19,\r\n          iVar4 = local_3f8, iVar7 != 0)) &&\r\n         ((iVar7 = FUN_1401700c0(lVar10,\"Date Created\"), iVar2 = iVar19, iVar3 = local_400,\r\n          iVar4 = local_3f8, iVar7 != 0 &&\r\n          (iVar7 = FUN_1401700c0(lVar10,\"Attributes\"), iVar2 = local_408, iVar3 = local_400,\r\n          iVar4 = local_3f8, iVar7 == 0)))) {\r\n        iVar15 = iVar19;\r\n      }\r\n      local_3f8 = iVar4;\r\n      local_400 = iVar3;\r\n      local_408 = iVar2;\r\n      iVar19 = iVar19 + 1;\r\n      lVar10 = FUN_14000d8e0(lVar9);\r\n      iVar7 = iVar18;\r\n      iVar2 = iVar15;\r\n    }\r\n    local_404 = iVar2;\r\n    local_3f4 = iVar18;\r\n    iVar15 = FUN_14000dac0(lVar9);\r\n    if (iVar15 != 0) {\r\nLAB_140129540:\r\n      iVar15 = 0;\r\n      local_3e8 = \"\";\r\n      pcVar14 = \"\";\r\n      pcVar11 = (char *)FUN_14000d8e0(lVar9);\r\n      param_1 = local_3f0;\r\n      pcVar16 = \"\";\r\n      pcVar13 = \"\";\r\n      pcVar21 = \"\";\r\n      if (pcVar11 != (char *)0x0) {\r\n        do {\r\n          pcVar20 = pcVar13;\r\n          pcVar22 = pcVar21;\r\n          if (iVar15 == iVar19) goto LAB_1401295d0;\r\n          pcVar17 = pcVar11;\r\n          pcVar5 = local_3e8;\r\n          if (((iVar15 != iVar7) && (pcVar17 = pcVar16, pcVar20 = pcVar11, iVar15 != local_3f8)) &&\r\n             ((pcVar20 = pcVar13, pcVar22 = pcVar11, iVar15 != local_400 &&\r\n              ((pcVar22 = pcVar21, pcVar5 = pcVar11, iVar15 != local_408 &&\r\n               (pcVar5 = local_3e8, iVar15 == local_404)))))) {\r\n            pcVar14 = pcVar11;\r\n          }\r\n          local_3e8 = pcVar5;\r\n          iVar15 = iVar15 + 1;\r\n          pcVar11 = (char *)FUN_14000d8e0(lVar9);\r\n          pcVar16 = pcVar17;\r\n          pcVar13 = pcVar20;\r\n          pcVar21 = pcVar22;\r\n        } while (pcVar11 != (char *)0x0);\r\n        goto LAB_1401295dd;\r\n      }\r\n      goto LAB_140129720;\r\n    }\r\nLAB_140129744:\r\n    SetCursor(local_3e0);\r\n    InvalidateRect((HWND)param_1[2],(RECT *)0x0,0);\r\n    uVar12 = FUN_140177a80(param_1[5],local_3d8);\r\n    param_1[5] = uVar12;\r\n    FUN_140126a50(param_1);\r\n    FUN_140128760(param_1);\r\n    FUN_14017e740(local_168);\r\n    lVar10 = param_1[5];\r\n    if (lVar10 == 0) {\r\n      lVar10 = *(longlong *)(PTR_PTR_140202708 + 0x19c8);\r\n    }\r\n    uVar12 = FUN_140170030(lVar10);\r\n    FUN_140179b60(local_168,\"%s - %s\",uVar12,*(undefined8 *)(PTR_PTR_140202708 + 0x18c0));\r\n    FUN_1400d5ee0(*param_1,local_160);\r\n    FUN_1400012c0(local_168);\r\n    FUN_140126a50(param_1);\r\n    FUN_1400012c0(local_288);\r\n    FUN_1400012c0(local_3a8);\r\n    FUN_14000d8b0(lVar9);\r\n  }\r\n  return;\r\nLAB_1401295d0:\r\n  do {\r\n    lVar10 = FUN_14000d8e0(lVar9);\r\n    pcVar17 = pcVar16;\r\n  } while (lVar10 != 0);\r\nLAB_1401295dd:\r\n  param_1 = local_3f0;\r\n  if (*pcVar17 != '\\0') {\r\n    pcVar16 = pcVar17 + 1;\r\n    if ((pcVar17[1] != ':') &&\r\n       (((*pcVar17 != '\\\\' || (pcVar17[1] != '\\\\')) &&\r\n        (iVar15 = FUN_140176a80(pcVar17), iVar15 == 0)))) {\r\n      if (*pcVar17 == '\\\\') {\r\n        cVar1 = *pcVar16;\r\n        pcVar13 = pcVar16;\r\n        while (cVar1 != '\\0') {\r\n          pcVar13 = pcVar13 + 1;\r\n          cVar1 = *pcVar13;\r\n        }\r\n        uVar8 = FUN_1401769d0(local_3a0);\r\n        local_418 = (int)pcVar13 - (int)pcVar16;\r\n        FUN_140179960(local_288,local_3a0,uVar8,pcVar16);\r\n      }\r\n      else {\r\n        FUN_140179a70(local_288,local_3a0,pcVar17);\r\n      }\r\n      FUN_140178a50(local_288);\r\n      pcVar17 = local_280;\r\n    }\r\n    local_3b0 = FUN_14016fd90(pcVar14);\r\n    if (*pcVar20 == '\\0') {\r\n      local_3d0 = 0xffffffffffffffff;\r\n    }\r\n    else {\r\n      local_3d0 = FUN_14016fd50(pcVar20);\r\n    }\r\n    if (*pcVar22 == '\\0') {\r\n      local_3c8 = 0xffffffffffffffff;\r\n    }\r\n    else {\r\n      local_3c8 = FUN_14016f840(pcVar22);\r\n    }\r\n    if (*local_3e8 == '\\0') {\r\n      local_3c0 = 0xffffffffffffffff;\r\n    }\r\n    else {\r\n      local_3c0 = FUN_14016f840();\r\n    }\r\n    param_1 = local_3f0;\r\n    iVar15 = local_3fc;\r\n    FUN_140125fc0(local_3f0,local_3fc,pcVar17,&local_3d0);\r\n    local_3fc = iVar15 + 1;\r\n  }\r\nLAB_140129720:\r\n  iVar15 = FUN_14000dac0(lVar9);\r\n  iVar7 = local_3f4;\r\n  if (iVar15 == 0) goto LAB_140129744;\r\n  goto LAB_140129540;\r\n}\r\n\r\n",
+    "signature": "void FUN_140129380(undefined8 *param_1,undefined8 param_2);"
+  },
+  "summary": "Pseudo-C for FUN_140129380 from the Deep engine (225 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x140129380"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

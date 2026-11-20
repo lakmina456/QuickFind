@@ -1,0 +1,1236 @@
+{
+  "id": "ev_b9ea6b55e257a7aa0ef73e20dcf80cbf83b83a6aa0d6d3586451c2b81328921c",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 80,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "(Match Case|Match Whole Word|Match Path|Enable Regex|Match Diacritics|Everything|Search Everything|Ready|Indexing)"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401b30f0",
+        "references": [
+          {
+            "from": "0x1400055c1",
+            "function": "sub_1400055b0"
+          },
+          {
+            "from": "0x140005694",
+            "function": "sub_140005690"
+          },
+          {
+            "from": "0x1400056f2",
+            "function": "sub_1400056d0"
+          },
+          {
+            "from": "0x140005731",
+            "function": "sub_140005702"
+          },
+          {
+            "from": "0x140005840",
+            "function": "sub_140005820"
+          },
+          {
+            "from": "0x140005952",
+            "function": "sub_140005930"
+          },
+          {
+            "from": "0x140005b22",
+            "function": "sub_140005a8f"
+          },
+          {
+            "from": "0x140005b29",
+            "function": "sub_140005a8f"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Everything Client"
+      },
+      {
+        "address": "0x1401b49f0",
+        "references": [
+          {
+            "from": "0x140200b18",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "filter_everything_name"
+      },
+      {
+        "address": "0x1401b6960",
+        "references": [
+          {
+            "from": "0x14000b819",
+            "function": "sub_14000b7d0"
+          },
+          {
+            "from": "0x14000b921",
+            "function": "sub_14000b7d0"
+          },
+          {
+            "from": "0x14000cc8f",
+            "function": "sub_14000cc30"
+          },
+          {
+            "from": "0x14000d473",
+            "function": "sub_14000d451"
+          },
+          {
+            "from": "0x14000d493",
+            "function": "sub_14000d451"
+          },
+          {
+            "from": "0x14000d4b3",
+            "function": "sub_14000d451"
+          },
+          {
+            "from": "0x14000d4d4",
+            "function": "sub_14000d451"
+          },
+          {
+            "from": "0x14000e461",
+            "function": "sub_14000e3a0"
+          },
+          {
+            "from": "0x1400139c8",
+            "function": "sub_140012ab5"
+          },
+          {
+            "from": "0x1400b4415",
+            "function": "sub_1400b43df"
+          },
+          {
+            "from": "0x1400cc7a9",
+            "function": "sub_1400cc770"
+          },
+          {
+            "from": "0x1400ec778",
+            "function": "sub_1400ec750"
+          },
+          {
+            "from": "0x1400ec86a",
+            "function": "sub_1400ec85d"
+          },
+          {
+            "from": "0x1400ecb3d",
+            "function": "sub_1400ecb30"
+          },
+          {
+            "from": "0x1400ecde2",
+            "function": "sub_1400ecdd5"
+          },
+          {
+            "from": "0x1400ed127",
+            "function": "sub_1400ecfe0"
+          },
+          {
+            "from": "0x140109548",
+            "function": "sub_140109490"
+          },
+          {
+            "from": "0x14010b91a",
+            "function": "sub_14010b800"
+          },
+          {
+            "from": "0x140142c35",
+            "function": "sub_140142be0"
+          },
+          {
+            "from": "0x14014302c",
+            "function": "sub_140142c44"
+          },
+          {
+            "from": "0x140143146",
+            "function": "sub_140143124"
+          },
+          {
+            "from": "0x140143249",
+            "function": "sub_140143227"
+          },
+          {
+            "from": "0x14014347d",
+            "function": "sub_140143334"
+          },
+          {
+            "from": "0x1401435ac",
+            "function": "sub_140143510"
+          },
+          {
+            "from": "0x1401437a6",
+            "function": "sub_140143650"
+          },
+          {
+            "from": "0x14014388a",
+            "function": "sub_140143830"
+          },
+          {
+            "from": "0x14014397d",
+            "function": "sub_140143920"
+          },
+          {
+            "from": "0x1401443c0",
+            "function": "sub_140144390"
+          },
+          {
+            "from": "0x140148f2f",
+            "function": "sub_140148b47"
+          },
+          {
+            "from": "0x14014917b",
+            "function": "sub_14014909a"
+          },
+          {
+            "from": "0x1401493a9",
+            "function": "sub_140149250"
+          },
+          {
+            "from": "0x140149764",
+            "function": "sub_140149760"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Everything"
+      },
+      {
+        "address": "0x1401b69c0",
+        "references": [
+          {
+            "from": "0x14000cd3a",
+            "function": "sub_14000cce0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "; settings stored in %APPDATA%\\Everything\\Everything.ini\r\n"
+      },
+      {
+        "address": "0x1401b6a00",
+        "references": [
+          {
+            "from": "0x14000cd16",
+            "function": "sub_14000cce0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "[Everything]\r\n"
+      },
+      {
+        "address": "0x1401b6a10",
+        "references": [
+          {
+            "from": "0x14000cd07",
+            "function": "sub_14000cce0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "; Please make sure Everything is not running before modifying this file.\r\n"
+      },
+      {
+        "address": "0x1401b6aa8",
+        "references": [
+          {
+            "from": "0x14000e434",
+            "function": "sub_14000e3a0"
+          },
+          {
+            "from": "0x140013998",
+            "function": "sub_140012ab5"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Everything.%s.%s"
+      },
+      {
+        "address": "0x1401b7170",
+        "references": [
+          {
+            "from": "0x1400152ae",
+            "function": "sub_140015250"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Everything database is corrupt.\nPlease restart Everything to rebuild the database."
+      },
+      {
+        "address": "0x1401b79d0",
+        "references": [
+          {
+            "from": "0x140019f63",
+            "function": "sub_140019f50"
+          }
+        ],
+        "section": ".rdata",
+        "text": "_db_ready_proc"
+      },
+      {
+        "address": "0x1401b7f28",
+        "references": [
+          {
+            "from": "0x140021f93",
+            "function": "sub_14001d7a0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Indexing %s, %s, %s\n"
+      },
+      {
+        "address": "0x1401bae28",
+        "references": [
+          {
+            "from": "0x1400b195b",
+            "function": "sub_1400b18b0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "already sorted\n"
+      },
+      {
+        "address": "0x1401baf28",
+        "references": [
+          {
+            "from": "0x1400b404d",
+            "function": "sub_1400b4020"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Everything\n"
+      },
+      {
+        "address": "0x1401baf38",
+        "references": [
+          {
+            "from": "0x1400b424e",
+            "function": "sub_1400b4190"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Everything"
+      },
+      {
+        "address": "0x1401baf88",
+        "references": [
+          {
+            "from": "0x1400b452f",
+            "function": "sub_1400b44e0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Everything Debug Log.txt"
+      },
+      {
+        "address": "0x1401bafc0",
+        "references": [
+          {
+            "from": "0x1400b4528",
+            "function": "sub_1400b44e0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Everything Service Debug Log.txt"
+      },
+      {
+        "address": "0x1401bb208",
+        "references": [
+          {
+            "from": "0x1400b6236",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING QUERY\r\n"
+      },
+      {
+        "address": "0x1401bb220",
+        "references": [
+          {
+            "from": "0x1400b6217",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING SORT %s\r\n"
+      },
+      {
+        "address": "0x1401bb238",
+        "references": [
+          {
+            "from": "0x1400b61d2",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING FILTER_SEARCH %s\r\n"
+      },
+      {
+        "address": "0x1401bb258",
+        "references": [
+          {
+            "from": "0x1400b616a",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING FILTER_WHOLE_WORD %d\r\n"
+      },
+      {
+        "address": "0x1401bb280",
+        "references": [
+          {
+            "from": "0x1400b6124",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING FILTER_REGEX %d\r\n"
+      },
+      {
+        "address": "0x1401bb2a0",
+        "references": [
+          {
+            "from": "0x1400b60dd",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING FILTER_PATH %d\r\n"
+      },
+      {
+        "address": "0x1401bb2c0",
+        "references": [
+          {
+            "from": "0x1400b6096",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING FILTER_DIACRITICS %d\r\n"
+      },
+      {
+        "address": "0x1401bb2e8",
+        "references": [
+          {
+            "from": "0x1400b6054",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING FILTER_CASE %d\r\n"
+      },
+      {
+        "address": "0x1401bb308",
+        "references": [
+          {
+            "from": "0x1400b600f",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING SEARCH %s\r\n"
+      },
+      {
+        "address": "0x1401bb320",
+        "references": [
+          {
+            "from": "0x1400b5fb9",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING HIDE_EMPTY_SEARCH_RESULTS %d\r\n"
+      },
+      {
+        "address": "0x1401bb350",
+        "references": [
+          {
+            "from": "0x1400b5f8e",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING REGEX %d\r\n"
+      },
+      {
+        "address": "0x1401bb368",
+        "references": [
+          {
+            "from": "0x1400b5f63",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING DIACRITICS %d\r\n"
+      },
+      {
+        "address": "0x1401bb388",
+        "references": [
+          {
+            "from": "0x1400b5f38",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING PATH %d\r\n"
+      },
+      {
+        "address": "0x1401bb3a0",
+        "references": [
+          {
+            "from": "0x1400b5f11",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING WHOLE_WORD %d\r\n"
+      },
+      {
+        "address": "0x1401bb3c0",
+        "references": [
+          {
+            "from": "0x1400b5eea",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING CASE %d\r\n"
+      },
+      {
+        "address": "0x1401bb3d8",
+        "references": [
+          {
+            "from": "0x1400b5ebe",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING COUNT %d\r\n"
+      },
+      {
+        "address": "0x1401bb3f0",
+        "references": [
+          {
+            "from": "0x1400b5e8a",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING OFFSET %d\r\n"
+      },
+      {
+        "address": "0x1401bb408",
+        "references": [
+          {
+            "from": "0x1400b5e56",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING DATE_RECENTLY_CHANGED_COLUMN %d\r\n"
+      },
+      {
+        "address": "0x1401bb438",
+        "references": [
+          {
+            "from": "0x1400b5e22",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING FILE_LIST_FILENAME_COLUMN %d\r\n"
+      },
+      {
+        "address": "0x1401bb468",
+        "references": [
+          {
+            "from": "0x1400b5df2",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING PATH_COLUMN 1\r\n"
+      },
+      {
+        "address": "0x1401bb488",
+        "references": [
+          {
+            "from": "0x1400b5dc5",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING DATE_CREATED_COLUMN %d\r\n"
+      },
+      {
+        "address": "0x1401bb4b0",
+        "references": [
+          {
+            "from": "0x1400b5d91",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING DATE_MODIFIED_COLUMN %d\r\n"
+      },
+      {
+        "address": "0x1401bb4d8",
+        "references": [
+          {
+            "from": "0x1400b5d5d",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING ATTRIBUTES_COLUMN %d\r\n"
+      },
+      {
+        "address": "0x1401bb500",
+        "references": [
+          {
+            "from": "0x1400b5d2c",
+            "function": "sub_1400b5c60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING SIZE_COLUMN %d\r\n"
+      },
+      {
+        "address": "0x1401bb600",
+        "references": [
+          {
+            "from": "0x1400b7c75",
+            "function": "sub_1400b7af0"
+          },
+          {
+            "from": "0x1400b7cdb",
+            "function": "sub_1400b7af0"
+          },
+          {
+            "from": "0x1400b7ce2",
+            "function": "sub_1400b7af0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING_ETP_CLIENT"
+      },
+      {
+        "address": "0x1401bb958",
+        "references": [
+          {
+            "from": "0x1400b89bc",
+            "function": "sub_1400b8990"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Welcome to Everything ETP/FTP"
+      },
+      {
+        "address": "0x1401bc020",
+        "references": [
+          {
+            "from": "0x1400bb1c2",
+            "function": "sub_1400bac8f"
+          }
+        ],
+        "section": ".rdata",
+        "text": "500 Unknown Everything command.\r\n"
+      },
+      {
+        "address": "0x1401bc6f8",
+        "references": [
+          {
+            "from": "0x1400bc899",
+            "function": "sub_1400bc190"
+          }
+        ],
+        "section": ".rdata",
+        "text": "everything"
+      },
+      {
+        "address": "0x1401bc990",
+        "references": [
+          {
+            "from": "0x1400bc2d2",
+            "function": "sub_1400bc190"
+          }
+        ],
+        "section": ".rdata",
+        "text": "215 UNIX emulated by Everything\r\n"
+      },
+      {
+        "address": "0x1401bc9e0",
+        "references": [
+          {
+            "from": "0x1400bc29b",
+            "function": "sub_1400bc190"
+          }
+        ],
+        "section": ".rdata",
+        "text": "211-Features:\r\n MDTM\r\n REST STREAM\r\n SIZE\r\n MLST type*;size*;modify*;\r\n MLSD\r\n UTF8\r\n EVERYTHING\r\n211 End\r\n"
+      },
+      {
+        "address": "0x1401bcb88",
+        "references": [
+          {
+            "from": "0x1400bd2ab",
+            "function": "sub_1400bd24a"
+          },
+          {
+            "from": "0x1400bd2d3",
+            "function": "sub_1400bd24a"
+          },
+          {
+            "from": "0x1400bd2f1",
+            "function": "sub_1400bd24a"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING_ETP_SERVER"
+      },
+      {
+        "address": "0x1401bd508",
+        "references": [
+          {
+            "from": "0x1400c0c56",
+            "function": "sub_1400c0c50"
+          },
+          {
+            "from": "0x1400c0c60",
+            "function": "sub_1400c0c50"
+          },
+          {
+            "from": "0x1400c0ca8",
+            "function": "sub_1400c0ca0"
+          },
+          {
+            "from": "0x1400c0cb3",
+            "function": "sub_1400c0ca0"
+          },
+          {
+            "from": "0x1400c105f",
+            "function": "sub_1400c1055"
+          },
+          {
+            "from": "0x1400c1074",
+            "function": "sub_1400c1055"
+          },
+          {
+            "from": "0x1400c1220",
+            "function": "sub_1400c1055"
+          },
+          {
+            "from": "0x1400c1227",
+            "function": "sub_1400c1055"
+          },
+          {
+            "from": "0x1400c15d8",
+            "function": "sub_1400c15c0"
+          },
+          {
+            "from": "0x1400c15e3",
+            "function": "sub_1400c15c0"
+          },
+          {
+            "from": "0x1400c1639",
+            "function": "sub_1400c162a"
+          },
+          {
+            "from": "0x1400fd363",
+            "function": "sub_1400fd2e0"
+          },
+          {
+            "from": "0x140104126",
+            "function": "sub_140103de0"
+          },
+          {
+            "from": "0x140108554",
+            "function": "sub_1401075b0"
+          },
+          {
+            "from": "0x14010b03d",
+            "function": "sub_140109640"
+          },
+          {
+            "from": "0x14010ccd1",
+            "function": "sub_14010c580"
+          },
+          {
+            "from": "0x14011cab8",
+            "function": "sub_14011ca80"
+          },
+          {
+            "from": "0x14012d417",
+            "function": "sub_14012d3c0"
+          },
+          {
+            "from": "0x14012dc07",
+            "function": "sub_14012dc00"
+          },
+          {
+            "from": "0x14012dd58",
+            "function": "sub_14012dcf5"
+          },
+          {
+            "from": "0x14012df20",
+            "function": "sub_14012de75"
+          },
+          {
+            "from": "0x14012e0bc",
+            "function": "sub_14012e015"
+          },
+          {
+            "from": "0x14012e2c3",
+            "function": "sub_14012e25d"
+          },
+          {
+            "from": "0x14012e453",
+            "function": "sub_14012e3d0"
+          },
+          {
+            "from": "0x14012e75e",
+            "function": "sub_14012e5ab"
+          },
+          {
+            "from": "0x14012ea07",
+            "function": "sub_14012e510"
+          },
+          {
+            "from": "0x14012f11a",
+            "function": "sub_14012f0f5"
+          },
+          {
+            "from": "0x140202180",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING"
+      },
+      {
+        "address": "0x1401bd938",
+        "references": [
+          {
+            "from": "0x1402026a0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "everything.gif"
+      },
+      {
+        "address": "0x1401bdfc8",
+        "references": [
+          {
+            "from": "0x140202350",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "<a href=\"/\"><img class=\"logo\" src=\"/Everything.gif\" alt=\""
+      },
+      {
+        "address": "0x1401be880",
+        "references": [
+          {
+            "from": "0x1400c5670",
+            "function": "sub_1400c55ec"
+          },
+          {
+            "from": "0x1400c5866",
+            "function": "sub_1400c5820"
+          },
+          {
+            "from": "0x1400c7b0a",
+            "function": "sub_1400c7a7e"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Server: Everything HTTP Server\r\n"
+      },
+      {
+        "address": "0x1401beb98",
+        "references": [
+          {
+            "from": "0x1400c910f",
+            "function": "sub_1400c90c2"
+          },
+          {
+            "from": "0x1400c9137",
+            "function": "sub_1400c90c2"
+          },
+          {
+            "from": "0x1400c9155",
+            "function": "sub_1400c90c2"
+          }
+        ],
+        "section": ".rdata",
+        "text": "EVERYTHING_HTTP_SERVER"
+      },
+      {
+        "address": "0x1401bf450",
+        "references": [
+          {
+            "from": "0x1402058b0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "The size of the buffer for storing changes made to this folder, subfolder and files.\nChanges will be missed if Everything is unable to process this buffer fast enough.\nNetwork drives are limited to 64 KB."
+      },
+      {
+        "address": "0x1401bf730",
+        "references": [
+          {
+            "from": "0x140205838",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Match case or ignore case.\nThe generated old format is always case sensitive."
+      },
+      {
+        "address": "0x1401bf780",
+        "references": [
+          {
+            "from": "0x140205828",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "\r\nEverything\r\n\r\n\tCopyright (c) 2026 voidtools\r\n\t\r\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of\r\n\tthis software and associated documentation files (the \"Software\"), to deal in \r\n\tthe Software without restriction, including without limitation the rights to \r\n\tuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\r\n\tof the Software, and to permit persons to whom the Software is furnished to do\r\n\tso, subject to the following conditions:\r\n\t\r\n\tThe above copyright notice and this permission notice shall be included in all\r\n\tcopies or substantial portions of the Software.\r\n\t\r\n\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \r\n\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \r\n\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \r\n\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \r\n\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \r\n\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \r\n\tSOFTWARE.\r\n\r\nPerl-Compatible Regular Expressions\r\n\r\n\tCopyright (c) 1997-2012 University of Cambridge\r\n\t\r\n\tRedistribution and use in source and binary forms, with or without\r\n\tmodification, are permitted provided that the following conditions are met:\r\n\t\r\n\t* Redistributions of source code must retain the above copyright notice,\r\n\t  this list of conditions and the following disclaimer.\r\n\t\r\n\t* Redistributions in binary form must reproduce the above copyright\r\n\t  notice, this list of conditions and the following disclaimer in the\r\n\t  documentation and/or other materials provided with the distribution.\r\n\t\r\n\t* Neither the name of the University of Cambridge nor the names of its\r\n\t  contributors may be used to endorse or promote products derived from\r\n\t  this software without specific prior written permission.\r\n\t\r\n\tTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\r\n\tAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\r\n\tIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\r\n\tARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE\r\n\tLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\r\n\tCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\r\n\tSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\r\n\tINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\r\n\tCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\r\n\tARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\r\n\tPOSSIBILITY OF SUCH DAMAGE.\r\n"
+      },
+      {
+        "address": "0x1401c0210",
+        "references": [
+          {
+            "from": "0x140205820",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "License - Everything"
+      },
+      {
+        "address": "0x1401c04b0",
+        "references": [
+          {
+            "from": "0x140205778",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Keep a list of changes to the Everything database.\nAllows searching and sorting by Date recently changed.\nEnabling may reduce the performance of Everything.\nRecent changes indexing is similar to Date Modified indexing except only recently modified files are indexed.\n"
+      },
+      {
+        "address": "0x1401c06c0",
+        "references": [
+          {
+            "from": "0x140205758",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Unable to save settings.\n\nStore settings and data in %APPDATA%\\Everything?"
+      },
+      {
+        "address": "0x1401c0a28",
+        "references": [
+          {
+            "from": "0x1402056b8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Open Selection and do not Close Everything"
+      },
+      {
+        "address": "0x1401c0aa0",
+        "references": [
+          {
+            "from": "0x140143d0b",
+            "function": "sub_140143cd0"
+          },
+          {
+            "from": "0x140143d3c",
+            "function": "sub_140143cd0"
+          },
+          {
+            "from": "0x140150a28",
+            "function": "sub_14014df40"
+          },
+          {
+            "from": "0x140150a5d",
+            "function": "sub_14014df40"
+          },
+          {
+            "from": "0x1402056a0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Search Everything..."
+      },
+      {
+        "address": "0x1401c0ae0",
+        "references": [
+          {
+            "from": "0x140205690",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Help support the future development of \"Everything\"."
+      },
+      {
+        "address": "0x1401c1240",
+        "references": [
+          {
+            "from": "0x1402055a0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "The number of times the file or folder has been opened in \"Everything\"."
+      },
+      {
+        "address": "0x1401c13c0",
+        "references": [
+          {
+            "from": "0x140205550",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "This information is not indexed and will take some time to gather, combine with other filters for the best performance or enable indexing of this information."
+      },
+      {
+        "address": "0x1401c15c0",
+        "references": [
+          {
+            "from": "0x1402054a0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Size is not indexed. Combine with other filters for the best performance or enable size indexing."
+      },
+      {
+        "address": "0x1401c1a20",
+        "references": [
+          {
+            "from": "0x140205418",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Date accessed is not indexed. Combine with other filters for the best performance or enable date accessed indexing."
+      },
+      {
+        "address": "0x1401c1c00",
+        "references": [
+          {
+            "from": "0x140205400",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Date created is not indexed. Combine with other filters for the best performance or enable date created indexing."
+      },
+      {
+        "address": "0x1401c1dd0",
+        "references": [
+          {
+            "from": "0x1402053e8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Date modified is not indexed. Combine with other filters for the best performance or enable date modified indexing."
+      },
+      {
+        "address": "0x1401c2340",
+        "references": [
+          {
+            "from": "0x1402052f0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Match diacritics"
+      },
+      {
+        "address": "0x1401c2358",
+        "references": [
+          {
+            "from": "0x1402052e8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Match words anywhere or only match whole words."
+      },
+      {
+        "address": "0x1401c2388",
+        "references": [
+          {
+            "from": "0x1402052e0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Match whole words"
+      },
+      {
+        "address": "0x1401c23a0",
+        "references": [
+          {
+            "from": "0x1402052d0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Match case"
+      },
+      {
+        "address": "0x1401c25f0",
+        "references": [
+          {
+            "from": "0x140205250",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Allow instant sorting by extension. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by extension."
+      },
+      {
+        "address": "0x1401c26c0",
+        "references": [
+          {
+            "from": "0x140205240",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Allow instant sorting by path. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by path."
+      },
+      {
+        "address": "0x1401c2780",
+        "references": [
+          {
+            "from": "0x140205230",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Allow instant sorting by attributes. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by attributes."
+      },
+      {
+        "address": "0x1401c2850",
+        "references": [
+          {
+            "from": "0x140205220",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Allow instant sorting by date accessed. Requires an additional %d bytes of memory for each file and folder\nThe search performance of Everything is reduced when sorting by date accessed."
+      },
+      {
+        "address": "0x1401c2930",
+        "references": [
+          {
+            "from": "0x140205210",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Allow instant sorting by date modified. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by date modified."
+      },
+      {
+        "address": "0x1401c2a10",
+        "references": [
+          {
+            "from": "0x140205200",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Allow instant sorting by date created. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by date created."
+      },
+      {
+        "address": "0x1401c2af0",
+        "references": [
+          {
+            "from": "0x1402051f0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Allow instant sorting by size. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by size."
+      },
+      {
+        "address": "0x1401c2e70",
+        "references": [
+          {
+            "from": "0x1402051a0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Store and maintain size information for folders in the index. Enabling can reduce the performance of Everything. Requires an additional %d bytes of memory for each folder."
+      },
+      {
+        "address": "0x1401c33a0",
+        "references": [
+          {
+            "from": "0x140205020",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Show the total file selection size in the status bar. Size indexing must be enabled. Enabling will reduce the performance of Everything."
+      },
+      {
+        "address": "0x1401c3490",
+        "references": [
+          {
+            "from": "0x140204ff8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Include all the files and folders in the USN Journal on this volume in recent changes.\nEnabling may decrease \"Everything\" startup performance.\nIndex recent changes must be enabled."
+      }
+    ],
+    "total": 216
+  },
+  "summary": "216 strings match \"(Match Case|Match Whole Word|Match Path|Enable Regex|Match Diacritics|Everything|Search Everything|Ready|Indexing)\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 80,
+    "total": 216,
+    "next_offset": 80
+  },
+  "locations": [],
+  "links": []
+}

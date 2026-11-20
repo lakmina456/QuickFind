@@ -1,0 +1,4 @@
+[toolchain]
+# This computer has no Visual C++ linker; the GNU toolchain links on its own.
+channel = "stable-x86_64-pc-windows-gnu"
+profile = "minimal"

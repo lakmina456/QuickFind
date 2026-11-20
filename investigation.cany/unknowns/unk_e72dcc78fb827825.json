@@ -1,0 +1,20 @@
+{
+  "id": "unk_e72dcc78fb827825",
+  "revision": 3,
+  "question": "Exact size column format (Bytes / KB / MB auto thresholds and rounding)",
+  "severity": "low",
+  "domain": "display",
+  "status": "blocked",
+  "probes": [
+    "Capture the original after its database finishes loading and read the Size column",
+    "Decompile the size formatter behind table entry 0x140203630"
+  ],
+  "evidence_for": [
+    "ev_89501e7eb2244bc7efbc9f37c5347537b86f77d46d1694ec3322f007532fb561"
+  ],
+  "evidence_against": [
+    "ev_3dd9c486b489c7e0173eff98aa807a0265c72ef930d1e5999cd5c5560eea6b6c",
+    "ev_67113991d1a4c8cc477805939cce62c38d7d474d89dcba4b4a9e08ee3c8c4836"
+  ],
+  "resolution": "Not settled: the original stays on 'Updating database...' after 45 s in this account (likely needs admin rights or its service), so no Size values were shown. The rebuild shows files as KB rounded up with thousands separators and folders blank (estimate)."
+}

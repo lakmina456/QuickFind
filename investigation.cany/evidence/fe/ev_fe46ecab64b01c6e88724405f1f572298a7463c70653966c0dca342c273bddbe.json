@@ -1,0 +1,149 @@
+{
+  "id": "ev_fe46ecab64b01c6e88724405f1f572298a7463c70653966c0dca342c273bddbe",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": true,
+    "limit": 200,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "^(KB|MB|GB|TB|%s %s|%s KB|%I64u|%s, %s)$"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401bd47c",
+        "references": [
+          {
+            "from": "0x1400c0701",
+            "function": "sub_1400c03c0"
+          },
+          {
+            "from": "0x1400c0723",
+            "function": "sub_1400c03c0"
+          },
+          {
+            "from": "0x1400c0745",
+            "function": "sub_1400c03c0"
+          },
+          {
+            "from": "0x1400c5d34",
+            "function": "sub_1400c5bf0"
+          },
+          {
+            "from": "0x1400c5d5d",
+            "function": "sub_1400c5bf0"
+          },
+          {
+            "from": "0x1400c5f5c",
+            "function": "sub_1400c5bf0"
+          },
+          {
+            "from": "0x1400c5f88",
+            "function": "sub_1400c5bf0"
+          },
+          {
+            "from": "0x1400c68a9",
+            "function": "sub_1400c66d9"
+          },
+          {
+            "from": "0x1400c68db",
+            "function": "sub_1400c66d9"
+          },
+          {
+            "from": "0x1400f6fe5",
+            "function": "sub_1400f6f20"
+          },
+          {
+            "from": "0x1400f700e",
+            "function": "sub_1400f6f20"
+          },
+          {
+            "from": "0x1400f7037",
+            "function": "sub_1400f6f20"
+          },
+          {
+            "from": "0x14010fe6a",
+            "function": "sub_14010fd40"
+          },
+          {
+            "from": "0x14010fe9f",
+            "function": "sub_14010fd40"
+          },
+          {
+            "from": "0x14010fec5",
+            "function": "sub_14010fd40"
+          },
+          {
+            "from": "0x140111988",
+            "function": "sub_140111660"
+          },
+          {
+            "from": "0x1401119dc",
+            "function": "sub_140111660"
+          },
+          {
+            "from": "0x140111eed",
+            "function": "sub_140111ce0"
+          },
+          {
+            "from": "0x140111f1b",
+            "function": "sub_140111ce0"
+          },
+          {
+            "from": "0x1401274c6",
+            "function": "sub_1401273c5"
+          },
+          {
+            "from": "0x1401274eb",
+            "function": "sub_1401273c5"
+          },
+          {
+            "from": "0x140127510",
+            "function": "sub_1401273c5"
+          }
+        ],
+        "section": ".rdata",
+        "text": "%I64u"
+      },
+      {
+        "address": "0x1401d6e6c",
+        "references": [
+          {
+            "from": "0x14017d0d1",
+            "function": "sub_14017d070"
+          }
+        ],
+        "section": ".rdata",
+        "text": "%s %s"
+      }
+    ],
+    "total": 2
+  },
+  "summary": "2 strings match \"^(KB|MB|GB|TB|%s %s|%s KB|%I64u|%s, %s)$\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [],
+  "links": []
+}

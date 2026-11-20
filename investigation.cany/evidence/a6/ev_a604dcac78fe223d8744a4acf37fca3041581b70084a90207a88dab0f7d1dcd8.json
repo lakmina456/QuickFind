@@ -1,0 +1,103 @@
+{
+  "id": "ev_a604dcac78fe223d8744a4acf37fca3041581b70084a90207a88dab0f7d1dcd8",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 200,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "^(ext|startwith|endwith|dupe|nowholeword|noregex|nocase|nopath|files|folders|wfn|wholefilename|dm|dc|count|sizedupe|attrib|len|root|depth)$"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401b4060",
+        "references": [
+          {
+            "from": "0x14000c41b",
+            "function": "sub_14000b7d0"
+          },
+          {
+            "from": "0x1402013c0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "folders"
+      },
+      {
+        "address": "0x1401b9dd8",
+        "references": [
+          {
+            "from": "0x140201900",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "depth"
+      },
+      {
+        "address": "0x1401b9e38",
+        "references": [
+          {
+            "from": "0x1400bacc4",
+            "function": "sub_1400bac8f"
+          },
+          {
+            "from": "0x1400c81ef",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x1402018a0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "count"
+      },
+      {
+        "address": "0x1401ccc98",
+        "references": [
+          {
+            "from": "0x140203870",
+            "function": null
+          },
+          {
+            "from": "0x140205468",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Folders"
+      }
+    ],
+    "total": 4
+  },
+  "summary": "4 strings match \"^(ext|startwith|endwith|dupe|nowholeword|noregex|nocase|nopath|files|folders|wfn|wholefilename|dm|dc|count|sizedupe|attrib|len|root|depth)$\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 4,
+    "total": 4
+  },
+  "locations": [],
+  "links": []
+}

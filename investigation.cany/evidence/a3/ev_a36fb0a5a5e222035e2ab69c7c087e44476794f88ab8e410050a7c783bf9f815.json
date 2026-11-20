@@ -1,0 +1,104 @@
+{
+  "id": "ev_a36fb0a5a5e222035e2ab69c7c087e44476794f88ab8e410050a7c783bf9f815",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 50,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "objects"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401cdcc8",
+        "references": [
+          {
+            "from": "0x1402034f8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "1 of 1 objects selected"
+      },
+      {
+        "address": "0x1401cdce0",
+        "references": [
+          {
+            "from": "0x1402034f0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "%s of %s objects selected"
+      },
+      {
+        "address": "0x1401cfdb8",
+        "references": [
+          {
+            "from": "0x140202b38",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "%s objects"
+      },
+      {
+        "address": "0x1401cfdd8",
+        "references": [
+          {
+            "from": "0x140202b28",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "%s objects selected"
+      },
+      {
+        "address": "0x1401d5588",
+        "references": [
+          {
+            "from": "0x140121edb",
+            "function": "sub_140121cc0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AllFilesystemObjects"
+      },
+      {
+        "address": "0x1401fc988",
+        "references": [],
+        "section": ".rdata",
+        "text": "WaitForMultipleObjects"
+      }
+    ],
+    "total": 6
+  },
+  "summary": "6 strings match \"objects\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 6,
+    "total": 6
+  },
+  "locations": [],
+  "links": []
+}

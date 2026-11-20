@@ -1,0 +1,430 @@
+{
+  "id": "ev_26a287e783b7a7fc051e1a8d47d4e99a48efa35d6324b512de21fa6b9fcc4cd1",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 50,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "^(Name|Path|Size|Date Modified|Date Created|Type|Extension|Attributes)$"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401b2f54",
+        "references": [
+          {
+            "from": "0x1401fe018",
+            "function": null
+          },
+          {
+            "from": "0x140202148",
+            "function": null
+          },
+          {
+            "from": "0x140202a40",
+            "function": null
+          },
+          {
+            "from": "0x1402063e8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Path"
+      },
+      {
+        "address": "0x1401b2f74",
+        "references": [
+          {
+            "from": "0x1401fe000",
+            "function": null
+          },
+          {
+            "from": "0x140202130",
+            "function": null
+          },
+          {
+            "from": "0x140202a38",
+            "function": null
+          },
+          {
+            "from": "0x140205600",
+            "function": null
+          },
+          {
+            "from": "0x1402063e0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Name"
+      },
+      {
+        "address": "0x1401b3410",
+        "references": [
+          {
+            "from": "0x1400b7449",
+            "function": "sub_1400b6db0"
+          },
+          {
+            "from": "0x1400ba8cb",
+            "function": "sub_1400ba830"
+          },
+          {
+            "from": "0x1400c37e6",
+            "function": "sub_1400c34a0"
+          },
+          {
+            "from": "0x1400c4049",
+            "function": "sub_1400c3f90"
+          },
+          {
+            "from": "0x1400c43f2",
+            "function": "sub_1400c41f0"
+          },
+          {
+            "from": "0x1400c83af",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x1400c8608",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x1401fe7e8",
+            "function": null
+          },
+          {
+            "from": "0x140201358",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "path"
+      },
+      {
+        "address": "0x1401b40f8",
+        "references": [
+          {
+            "from": "0x1400bc72a",
+            "function": "sub_1400bc190"
+          },
+          {
+            "from": "0x140201370",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "type"
+      },
+      {
+        "address": "0x1401b4100",
+        "references": [
+          {
+            "from": "0x140201368",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "extension"
+      },
+      {
+        "address": "0x1401b410c",
+        "references": [
+          {
+            "from": "0x1400b73c8",
+            "function": "sub_1400b6db0"
+          },
+          {
+            "from": "0x1400bc574",
+            "function": "sub_1400bc190"
+          },
+          {
+            "from": "0x1400c37dd",
+            "function": "sub_1400c34a0"
+          },
+          {
+            "from": "0x1400c4095",
+            "function": "sub_1400c3f90"
+          },
+          {
+            "from": "0x1400c43e9",
+            "function": "sub_1400c41f0"
+          },
+          {
+            "from": "0x1400c85c7",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x140201360",
+            "function": null
+          },
+          {
+            "from": "0x140201928",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "size"
+      },
+      {
+        "address": "0x1401b4114",
+        "references": [
+          {
+            "from": "0x1400c37cb",
+            "function": "sub_1400c34a0"
+          },
+          {
+            "from": "0x1400c3ff3",
+            "function": "sub_1400c3f90"
+          },
+          {
+            "from": "0x1400c43d7",
+            "function": "sub_1400c41f0"
+          },
+          {
+            "from": "0x1400c867d",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x140201350",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "name"
+      },
+      {
+        "address": "0x1401b7f68",
+        "references": [
+          {
+            "from": "0x1400211ea",
+            "function": "sub_14001d7a0"
+          },
+          {
+            "from": "0x1401294e6",
+            "function": "sub_140129380"
+          },
+          {
+            "from": "0x140202c20",
+            "function": null
+          },
+          {
+            "from": "0x140204150",
+            "function": null
+          },
+          {
+            "from": "0x140205628",
+            "function": null
+          },
+          {
+            "from": "0x140206420",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Attributes"
+      },
+      {
+        "address": "0x1401b7f88",
+        "references": [
+          {
+            "from": "0x1400211b2",
+            "function": "sub_14001d7a0"
+          },
+          {
+            "from": "0x1401294b2",
+            "function": "sub_140129380"
+          },
+          {
+            "from": "0x140202a50",
+            "function": null
+          },
+          {
+            "from": "0x140202c08",
+            "function": null
+          },
+          {
+            "from": "0x140204140",
+            "function": null
+          },
+          {
+            "from": "0x140206408",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Date Modified"
+      },
+      {
+        "address": "0x1401b7f98",
+        "references": [
+          {
+            "from": "0x140021196",
+            "function": "sub_14001d7a0"
+          },
+          {
+            "from": "0x1401294cc",
+            "function": "sub_140129380"
+          },
+          {
+            "from": "0x140202c10",
+            "function": null
+          },
+          {
+            "from": "0x140204148",
+            "function": null
+          },
+          {
+            "from": "0x140206410",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Date Created"
+      },
+      {
+        "address": "0x1401b7fa8",
+        "references": [
+          {
+            "from": "0x14002117a",
+            "function": "sub_14001d7a0"
+          },
+          {
+            "from": "0x140129498",
+            "function": "sub_140129380"
+          },
+          {
+            "from": "0x140202a48",
+            "function": null
+          },
+          {
+            "from": "0x140204128",
+            "function": null
+          },
+          {
+            "from": "0x140205620",
+            "function": null
+          },
+          {
+            "from": "0x1402063f0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Size"
+      },
+      {
+        "address": "0x1401bb570",
+        "references": [
+          {
+            "from": "0x1400b739d",
+            "function": "sub_1400b6db0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "attributes"
+      },
+      {
+        "address": "0x1401c0f08",
+        "references": [
+          {
+            "from": "0x140205610",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Date created"
+      },
+      {
+        "address": "0x1401c0f18",
+        "references": [
+          {
+            "from": "0x140205608",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Date modified"
+      },
+      {
+        "address": "0x1401cdd04",
+        "references": [
+          {
+            "from": "0x1402034e0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "PATH"
+      },
+      {
+        "address": "0x1401ce5a8",
+        "references": [
+          {
+            "from": "0x1402031f8",
+            "function": null
+          },
+          {
+            "from": "0x140204138",
+            "function": null
+          },
+          {
+            "from": "0x140206400",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Type"
+      },
+      {
+        "address": "0x1401ce5b0",
+        "references": [
+          {
+            "from": "0x1402031f0",
+            "function": null
+          },
+          {
+            "from": "0x140204130",
+            "function": null
+          },
+          {
+            "from": "0x1402063f8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Extension"
+      }
+    ],
+    "total": 17
+  },
+  "summary": "17 strings match \"^(Name|Path|Size|Date Modified|Date Created|Type|Extension|Attributes)$\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 17,
+    "total": 17
+  },
+  "locations": [],
+  "links": []
+}

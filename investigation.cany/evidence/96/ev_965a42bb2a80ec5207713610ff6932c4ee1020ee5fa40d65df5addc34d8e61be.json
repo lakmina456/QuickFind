@@ -1,0 +1,147 @@
+{
+  "id": "ev_965a42bb2a80ec5207713610ff6932c4ee1020ee5fa40d65df5addc34d8e61be",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 200,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "^(&File|&Edit|&View|&Search|Book&marks|&Tools|&Help|%s KB|KB|MB|GB|bytes|%s bytes)$"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401c4554",
+        "references": [
+          {
+            "from": "0x140204ba8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "bytes"
+      },
+      {
+        "address": "0x1401cd6d4",
+        "references": [
+          {
+            "from": "0x140203640",
+            "function": null
+          },
+          {
+            "from": "0x1402054a8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Bytes"
+      },
+      {
+        "address": "0x1401cda48",
+        "references": [
+          {
+            "from": "0x1402035b8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "&View"
+      },
+      {
+        "address": "0x1401cfe04",
+        "references": [
+          {
+            "from": "0x140202af8",
+            "function": null
+          },
+          {
+            "from": "0x140203ff8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "&Help"
+      },
+      {
+        "address": "0x1401cfe0c",
+        "references": [
+          {
+            "from": "0x140202af0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "&Tools"
+      },
+      {
+        "address": "0x1401cfe18",
+        "references": [
+          {
+            "from": "0x140202ae8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "&Search"
+      },
+      {
+        "address": "0x1401cfe20",
+        "references": [
+          {
+            "from": "0x140202ae0",
+            "function": null
+          },
+          {
+            "from": "0x140203fe8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "&Edit"
+      },
+      {
+        "address": "0x1401cfe28",
+        "references": [
+          {
+            "from": "0x140202ad8",
+            "function": null
+          },
+          {
+            "from": "0x140203fd8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "&File"
+      }
+    ],
+    "total": 8
+  },
+  "summary": "8 strings match \"^(&File|&Edit|&View|&Search|Book&marks|&Tools|&Help|%s KB|KB|MB|GB|bytes|%s bytes)$\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 8,
+    "total": 8
+  },
+  "locations": [],
+  "links": []
+}

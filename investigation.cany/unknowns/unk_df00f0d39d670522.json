@@ -1,0 +1,17 @@
+{
+  "id": "unk_df00f0d39d670522",
+  "revision": 2,
+  "question": "Default column widths and window size of the result list",
+  "severity": "low",
+  "domain": "layout",
+  "status": "resolved",
+  "probes": [
+    "Decompile the column-setup code that references 'Date Modified' (sub_140129380)",
+    "Screenshot the original window"
+  ],
+  "evidence_for": [
+    "ev_3dd9c486b489c7e0173eff98aa807a0265c72ef930d1e5999cd5c5560eea6b6c"
+  ],
+  "evidence_against": [],
+  "resolution": "Capture of the running original: window about 1009x761, Name column about 440 px, Path about 505 px (Size/Date further right behind a horizontal scrollbar), sorted column tinted light grey with a small caret above its header, filter box hidden by default, Bookmarks menu present."
+}

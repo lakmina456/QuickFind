@@ -1,0 +1,120 @@
+{
+  "id": "ev_6aa8e8fb3e52675f8c0b8c70ed5b7282c81295c19d0462c680d527d1afd1e848",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 30,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "(folders_first|folder_first|Folders &first|sort_)"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401b3cc0",
+        "references": [
+          {
+            "from": "0x1402016e8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "current_sort_alternate_row_highlighted"
+      },
+      {
+        "address": "0x1401b3ce8",
+        "references": [
+          {
+            "from": "0x1402016e0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "current_sort_alternate_row"
+      },
+      {
+        "address": "0x1401b3d38",
+        "references": [
+          {
+            "from": "0x1402016c8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "mouseover_current_sort_highlighted"
+      },
+      {
+        "address": "0x1401b3e28",
+        "references": [
+          {
+            "from": "0x140201678",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "current_sort_highlighted"
+      },
+      {
+        "address": "0x1401b45b0",
+        "references": [
+          {
+            "from": "0x140200ef0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "search_history_sort_ascending"
+      },
+      {
+        "address": "0x1401b4890",
+        "references": [
+          {
+            "from": "0x140200c98",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "sort_ascending"
+      },
+      {
+        "address": "0x1401b71d8",
+        "references": [
+          {
+            "from": "0x140015410",
+            "function": "sub_1400152e0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "_db_flip_sort_type"
+      }
+    ],
+    "total": 7
+  },
+  "summary": "7 strings match \"(folders_first|folder_first|Folders &first|sort_)\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 7,
+    "total": 7
+  },
+  "locations": [],
+  "links": []
+}

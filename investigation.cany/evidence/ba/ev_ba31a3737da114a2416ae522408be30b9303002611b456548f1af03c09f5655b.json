@@ -1,0 +1,142 @@
+{
+  "id": "ev_ba31a3737da114a2416ae522408be30b9303002611b456548f1af03c09f5655b",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 30,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "(folders first|gigantic|thisweek|yesterday|Show hidden|Double click)"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401b9ee0",
+        "references": [
+          {
+            "from": "0x140055326",
+            "function": "sub_140055200"
+          }
+        ],
+        "section": ".rdata",
+        "text": "gigantic"
+      },
+      {
+        "address": "0x1401ba4d0",
+        "references": [
+          {
+            "from": "0x14005eff3",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "yesterday"
+      },
+      {
+        "address": "0x1401c3748",
+        "references": [
+          {
+            "from": "0x140204ed0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Double click"
+      },
+      {
+        "address": "0x1401c3780",
+        "references": [
+          {
+            "from": "0x140204eb8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Open an item with a single or double click."
+      },
+      {
+        "address": "0x1401c6120",
+        "references": [
+          {
+            "from": "0x1402045c8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "List of filters.\nPress F2 or double click to edit an existing filter.\nPress Delete to delete an existing filter."
+      },
+      {
+        "address": "0x1401cb740",
+        "references": [
+          {
+            "from": "0x140203d00",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "List of bookmarks.\nPress F2 or double click to edit an existing bookmark.\nPress Delete to delete an existing bookmark."
+      },
+      {
+        "address": "0x1401cd670",
+        "references": [
+          {
+            "from": "0x140203658",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Open a path in the path column by double clicking."
+      },
+      {
+        "address": "0x1401cd6a8",
+        "references": [
+          {
+            "from": "0x140203650",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Open &path with double click in path column"
+      },
+      {
+        "address": "0x1401d4d10",
+        "references": [
+          {
+            "from": "0x140107831",
+            "function": "sub_140107831"
+          }
+        ],
+        "section": ".rdata",
+        "text": "ui show hidden %p\n"
+      }
+    ],
+    "total": 9
+  },
+  "summary": "9 strings match \"(folders first|gigantic|thisweek|yesterday|Show hidden|Double click)\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 9,
+    "total": 9
+  },
+  "locations": [],
+  "links": []
+}

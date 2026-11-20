@@ -1,0 +1,297 @@
+{
+  "id": "ev_9e1ce379ac62785e229fdaae8b1ffa22e0da2ae9a31df0dba97f835efe1f01cb",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 60,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "^(today|yesterday|tomorrow|thisweek|lastweek|thismonth|lastmonth|thisyear|lastyear|past|last|this|next|week|weeks|month|months|year|years|day|days|hours|minutes|mon|monday|january|jan)$"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401b9d54",
+        "references": [
+          {
+            "from": "0x14005f6b7",
+            "function": "sub_14005eeb0"
+          },
+          {
+            "from": "0x140201968",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "year"
+      },
+      {
+        "address": "0x1401ba378",
+        "references": [
+          {
+            "from": "0x14005f924",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "monday"
+      },
+      {
+        "address": "0x1401ba428",
+        "references": [
+          {
+            "from": "0x14005f713",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "january"
+      },
+      {
+        "address": "0x1401ba430",
+        "references": [
+          {
+            "from": "0x14005f682",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "month"
+      },
+      {
+        "address": "0x1401ba438",
+        "references": [
+          {
+            "from": "0x14005f5b9",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "week"
+      },
+      {
+        "address": "0x1401ba440",
+        "references": [
+          {
+            "from": "0x14005f4c6",
+            "function": "sub_14005eeb0"
+          },
+          {
+            "from": "0x140204720",
+            "function": null
+          },
+          {
+            "from": "0x140204bd0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "days"
+      },
+      {
+        "address": "0x1401ba448",
+        "references": [
+          {
+            "from": "0x14005f46c",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "years"
+      },
+      {
+        "address": "0x1401ba450",
+        "references": [
+          {
+            "from": "0x14005f3fa",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "months"
+      },
+      {
+        "address": "0x1401ba458",
+        "references": [
+          {
+            "from": "0x14005f390",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "weeks"
+      },
+      {
+        "address": "0x1401ba460",
+        "references": [
+          {
+            "from": "0x14005f31c",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "hours"
+      },
+      {
+        "address": "0x1401ba470",
+        "references": [
+          {
+            "from": "0x14005f2ee",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "minutes"
+      },
+      {
+        "address": "0x1401ba490",
+        "references": [
+          {
+            "from": "0x14005f225",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "this"
+      },
+      {
+        "address": "0x1401ba4a0",
+        "references": [
+          {
+            "from": "0x14005f1eb",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "next"
+      },
+      {
+        "address": "0x1401ba4a8",
+        "references": [
+          {
+            "from": "0x14005f1ce",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "past"
+      },
+      {
+        "address": "0x1401ba4b0",
+        "references": [
+          {
+            "from": "0x14005f1ae",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "last"
+      },
+      {
+        "address": "0x1401ba4c0",
+        "references": [
+          {
+            "from": "0x14005f0f6",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "tomorrow"
+      },
+      {
+        "address": "0x1401ba4d0",
+        "references": [
+          {
+            "from": "0x14005eff3",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "yesterday"
+      },
+      {
+        "address": "0x1401ba4dc",
+        "references": [
+          {
+            "from": "0x14005ef03",
+            "function": "sub_14005eeb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "today"
+      },
+      {
+        "address": "0x1401ca34c",
+        "references": [
+          {
+            "from": "0x140204340",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Hours"
+      },
+      {
+        "address": "0x1401ca358",
+        "references": [
+          {
+            "from": "0x140204338",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Minutes"
+      },
+      {
+        "address": "0x1401ec3f0",
+        "references": [
+          {
+            "from": "0x14020fb40",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "January"
+      },
+      {
+        "address": "0x1401ec438",
+        "references": [
+          {
+            "from": "0x14020fab0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Monday"
+      }
+    ],
+    "total": 22
+  },
+  "summary": "22 strings match \"^(today|yesterday|tomorrow|thisweek|lastweek|thismonth|lastmonth|thisyear|lastyear|past|last|this|next|week|weeks|month|months|year|years|day|days|hours|minutes|mon|monday|january|jan)$\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 22,
+    "total": 22
+  },
+  "locations": [],
+  "links": []
+}

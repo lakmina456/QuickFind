@@ -1,0 +1,314 @@
+{
+  "id": "ev_8c2a563d1a9d07e7d852d0cbbd14ba7e527f1808ad3d3db06a738a0d1050d007",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 40,
+    "mode": "regex",
+    "offset": 40,
+    "pattern": "(ext:|case:|regex:|file:|folder:|size:|dm:|wholeword:|path:)"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401bd670",
+        "references": [
+          {
+            "from": "0x1400c1946",
+            "function": "sub_1400c162a"
+          }
+        ],
+        "section": ".rdata",
+        "text": "ext:ani;bmp;gif;ico;jpe;jpeg;jpg;pcx;png;psd;tga;tif;tiff;webp;wmf"
+      },
+      {
+        "address": "0x1401bd6b8",
+        "references": [
+          {
+            "from": "0x1400c1846",
+            "function": "sub_1400c162a"
+          }
+        ],
+        "section": ".rdata",
+        "text": "ext:bat;cmd;exe;msi;msp;scr"
+      },
+      {
+        "address": "0x1401bd6e0",
+        "references": [
+          {
+            "from": "0x1400c17c6",
+            "function": "sub_1400c162a"
+          }
+        ],
+        "section": ".rdata",
+        "text": "ext:c;chm;cpp;csv;cxx;doc;docm;docx;dot;dotm;dotx;h;hpp;htm;html;hxx;ini;java;lua;mht;mhtml;odt;pdf;potx;potm;ppam;ppsm;ppsx;pps;ppt;pptm;pptx;rtf;sldm;sldx;thmx;txt;vsd;wpd;wps;wri;xlam;xls;xlsb;xlsm;xlsx;xltm;xltx;xml"
+      },
+      {
+        "address": "0x1401bd7c0",
+        "references": [
+          {
+            "from": "0x1400c1746",
+            "function": "sub_1400c162a"
+          }
+        ],
+        "section": ".rdata",
+        "text": "ext:7z;ace;arj;bz2;cab;gz;gzip;jar;r00;r01;r02;r03;r04;r05;r06;r07;r08;r09;r10;r11;r12;r13;r14;r15;r16;r17;r18;r19;r20;r21;r22;r23;r24;r25;r26;r27;r28;r29;rar;tar;tgz;z;zip"
+      },
+      {
+        "address": "0x1401bd880",
+        "references": [
+          {
+            "from": "0x1400c16c6",
+            "function": "sub_1400c162a"
+          }
+        ],
+        "section": ".rdata",
+        "text": "ext:aac;ac3;aif;aifc;aiff;au;cda;dts;fla;flac;it;m1a;m2a;m3u;m4a;m4b;m4p;mid;midi;mka;mod;mp2;mp3;mpa;ogg;ra;rmi;snd;spc;umx;voc;wav;wma;xm"
+      },
+      {
+        "address": "0x1401beae8",
+        "references": [
+          {
+            "from": "0x1400c7f42",
+            "function": "sub_1400c7dec"
+          }
+        ],
+        "section": ".rdata",
+        "text": "content range start: %I64u, size: %I64u\n"
+      },
+      {
+        "address": "0x1401bf520",
+        "references": [
+          {
+            "from": "0x1402058a8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Buffer &size:"
+      },
+      {
+        "address": "0x1401c21c8",
+        "references": [
+          {
+            "from": "0x140205350",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "A word or phrase &in the file:"
+      },
+      {
+        "address": "0x1401c4158",
+        "references": [
+          {
+            "from": "0x140204c88",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Match &regex:"
+      },
+      {
+        "address": "0x1401c41e8",
+        "references": [
+          {
+            "from": "0x140204c68",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Match &path:"
+      },
+      {
+        "address": "0x1401c4278",
+        "references": [
+          {
+            "from": "0x140204c48",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Match &case:"
+      },
+      {
+        "address": "0x1401c81e0",
+        "references": [
+          {
+            "from": "0x140204440",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "\r\nOperators:\r\n\tspace\tAND\r\n\t|\tOR\r\n\t!\tNOT\r\n\t< >\tGrouping\r\n\t\" \"\tSearch for an exact phrase.\r\n\r\nWildcards:\r\n\t*\tMatches zero or more characters.\r\n\t?\tMatches one character.\r\n\r\nMacros:\r\n\tquot:\tLiteral double quote (\")\r\n\tapos:\tLiteral apostrophe (')\r\n\tamp:\tLiteral ampersand (&)\r\n\tlt:\tLiteral less than (<)\r\n\tgt:\tLiteral greater than (>)\r\n\t#<n>:\tLiteral unicode character <n> in decimal.\r\n\t#x<n>:\tLiteral unicode character <n> in hexadecimal.\r\n\taudio:\tSearch for audio files.\r\n\tzip:\tSearch for compressed files.\r\n\tdoc:\tSearch for document files.\r\n\texe:\tSearch for executable files.\r\n\tpic:\tSearch for picture files.\r\n\tvideo:\tSearch for video files.\r\n\r\nModifiers:\r\n\tascii:\tEnable fast ASCII case comparisons.\r\n\tcase:\tMatch case.\r\n\tdiacritics:\tMatch diacritical marks.\r\n\tendwith:\tFilenames (including extension) ending with text.\r\n\tfile:\tMatch files only.\r\n\tfolder:\tMatch folders only.\r\n\tpath:\tMatch path and file name.\r\n\tregex:\tEnable regex.\r\n\tstartwith:\tSearch for filenames starting with text.\r\n\tutf8:\tDisable fast ASCII case comparisons.\r\n\twfn:\tMatch the whole filename.\r\n\twholefilename:\tMatch the whole filename.\r\n\twholeword:\tMatch whole words only.\r\n\twildcards:\tEnable wildcards.\r\n\tww:\tMatch whole words only.\r\n\tDisable a modifier with the no prefix.\r\n\r\nFunctions:\r\n\talbum:<text>\tSearch media for album metadata.\r\n\tansicontent:<text>\tSearch ANSI file content for text.\r\n\tartist:<text>\tSearch media for artist metadata.\r\n\tattrib:<attributes>\tSearch for files and folders with the specified file attributes.\r\n\tattribdupe:\tFind files and folders with the same attributes.\r\n\tattributes:<attributes>\tSearch for files and folders with the specified file attributes.\r\n\tbitdepth:<bitdepth>\tFind images with the specified bits per pixel.\r\n\tchild:<filename>\tSearch for folders that contain a child with a matching filename.\r\n\tchildcount:<count>\tSearch for folders that contain the specified number of subfolders and files.\r\n\tchildfilecount:<count>\tSearch for folders that contain the specified number of files.\r\n\tchildfoldercount:<n>\tSearch for folders that contain the specified number of subfolders.\r\n\tcomment:<text>\tSearch media for comment metadata.\r\n\tcontent:<text>\tSearch file content for text.\r\n\tcount:<max>\tLimit the number of results to max.\r\n\tdateaccessed:<date>\tSearch for files and folders with the specified date accessed.\r\n\tdatecreated:<date>\tSearch for files and folders with the specified date created.\r\n\tdatemodified:<date>\tSearch for files and folders with the specified date modified.\r\n\tdaterun:<date>\tSearch for files and folders with the specified date run.\r\n\tda:<date>\tSearch for files and folders with the specified date accessed.\r\n\tdadupe:\tFind files and folders with the same date accessed.\r\n\tdc:<date>\tSearch for files and folders with the specified date created.\r\n\tdcdupe:\tFind files and folders with the same date created.\r\n\tdimensions:<w>X<h>\tFind images with the specified width and height.\r\n\tdm:<date>\tSearch for files and folders with the specified date modified.\r\n\tdmdupe:\tFind files and folders with the same date modified.\r\n\tdr:<date>\tSearch for files and folders with the specified date run.\r\n\tdupe:\tSearch for duplicated filenames.\r\n\tempty:\tSearch for empty folders.\r\n\text:<ext1;ext2;...>\tSearch for files with a matching extension in the specified semicolon delimited extension list.\r\n\tfilelist:<fn1|fn2|...>\tSearch for a list of file names in the specified pipe (|) delimited file list.\r\n\tfilelistfilename:<name>\tSearch for files and folders belonging to the file list filename.\r\n\tfrn:<frn>\tSearch for files and folders with the specified File Reference Number.\r\n\tfsi:<index>\tSearch for files and folders in the specified zero-based internal file system index.\r\n\tgenre:<text>\tSearch media for genre metadata.\r\n\theight:<height>\tFind images with the specified height in pixels.\r\n\tinfolder:<path>\tSearch for files and folders in the specified path, excluding subfolders.\r\n\tlen:<length>\tSearch for files and folders that match the specified filename length.\r\n\tnamepartdupe:\tSearch for files and folders with the same name part.\r\n\torientation:<type>\tSearch for images with the "
+      },
+      {
+        "address": "0x1401cbf20",
+        "references": [
+          {
+            "from": "0x140203bf0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Remember &regex:"
+      },
+      {
+        "address": "0x1401cbf80",
+        "references": [
+          {
+            "from": "0x140203bd0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Remember match &path:"
+      },
+      {
+        "address": "0x1401cbfe0",
+        "references": [
+          {
+            "from": "0x140203bb0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Remember match &case:"
+      },
+      {
+        "address": "0x1401cc9dc",
+        "references": [
+          {
+            "from": "0x140203960",
+            "function": null
+          },
+          {
+            "from": "0x140205490",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "&Size:"
+      },
+      {
+        "address": "0x1401ceed0",
+        "references": [
+          {
+            "from": "0x140202fb8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Save ETP/FTP server log file:"
+      },
+      {
+        "address": "0x1401cefe8",
+        "references": [
+          {
+            "from": "0x140202f80",
+            "function": null
+          },
+          {
+            "from": "0x140203000",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Log &file:"
+      },
+      {
+        "address": "0x1401cf2a8",
+        "references": [
+          {
+            "from": "0x140202ed8",
+            "function": null
+          },
+          {
+            "from": "0x140204fa8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Maximum &size:"
+      },
+      {
+        "address": "0x1401d10a8",
+        "references": [
+          {
+            "from": "0x1400cf9db",
+            "function": "sub_1400cf9b0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "out of memory, size: %p, error: %u"
+      },
+      {
+        "address": "0x1401d4790",
+        "references": [
+          {
+            "from": "0x1400f91af",
+            "function": "sub_1400f8e00"
+          }
+        ],
+        "section": ".rdata",
+        "text": "exec: shellexecute (idlist) file:%s param:%s\n"
+      },
+      {
+        "address": "0x1401d5028",
+        "references": [
+          {
+            "from": "0x140114f59",
+            "function": "sub_140114300"
+          }
+        ],
+        "section": ".rdata",
+        "text": "path:len:"
+      },
+      {
+        "address": "0x1401d5038",
+        "references": [
+          {
+            "from": "0x140114a7d",
+            "function": "sub_140114300"
+          }
+        ],
+        "section": ".rdata",
+        "text": "nopath:len:"
+      },
+      {
+        "address": "0x140227537",
+        "references": [],
+        "section": ".rsrc",
+        "text": "A* {\r\n\tpadding: 0px;\r\n\tmargin: 0px;\r\n}\r\n\r\nbody {\r\n\tpadding: 4px;\r\n}\r\n\r\nbody, td, div {\r\n\tfont-family: Arial, sans-serif;\r\n\tfont-size: 12px;\r\n}\r\n\r\ntd, tr, img {\r\n\tborder-width: 0px;\r\n\tvertical-align:middle;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.indexof {\r\n\ttext-align: left;\r\n\tfont-weight: bold;\r\n\tfont-size: 125%;\r\n\tmargin-top: 32px;\r\n}\r\n\r\n.numresults {\r\n\ttext-align: left;\r\n\tfont-weight: bold;\r\n\tfont-size: 125%;\r\n\tmargin-top: 32px;\r\n}\r\n\r\n.updir {\r\n\ttext-align: left;\r\n\tpadding-top: 4px;\r\n}\r\n\r\n.nameheader, .folder, .file {\r\n\ttext-align: left;\r\n\tpadding: 2px 15px 2px 2px;\r\n\twidth: 100%;\r\n}\r\n\r\n.pathheader, .pathdata {\r\n\ttext-align: left;\r\n\tpadding: 2px 15px 2px 2px;\r\n\twidth: 0px;\r\n}\r\n\r\n.sizeheader, .sizedata {\r\n\tpadding: 2px 15px 2px 2px;\r\n\ttext-align: right;\r\n\twidth: 0px;\r\n}\r\n\r\n.modifiedheader, .modifieddata {\r\n\ttext-align: left;\r\n\tpadding: 2px;\r\n\twidth: 0px;\r\n}\r\n\r\n.sizeheader, .modifiedheader, .nameheader, .pathheader {\r\n\tfont-weight: bold;\r\n\tpadding-top: 32px;\r\n\tpadding-bottom: 2px;\r\n}\r\n\r\n.sizeheader a, .modifiedheader a, .nameheader a , .pathheader a {\r\n\tcolor:#000;\r\n}\r\n\r\ntr.trdata1:hover, tr.trdata2:hover {\r\n\tbackground-color: #eee;\r\n}\r\n\r\n.icon {\r\n\tvertical-align:middle;\r\n\tmargin-right: 4px;\r\n}\r\n\r\n.updown {\r\n\tmargin-left: 4px;\r\n\tvertical-align: middle;\r\n}\r\n\r\n.lineshadow {\r\n\tbackground-color: #ccc;\r\n}\r\n\r\n.logo {\r\n\tcolor:#666;\r\n\tfont-size:64px;\r\n}\r\n\r\n.searchbox {\r\n\tfont-size: 150%;\r\n\tpadding:2px;\r\n}\r\n\r\n.nobr {\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.nav {\r\n\tpadding-left: 4px;\r\n\tpadding-right: 4px;\r\n}\r\n\r\n.prevnext {\r\n\tfont-weight: bold;\r\n\tpadding-left: 8px;\r\n\tpadding-right: 8px;\r\n}PADGIF89a"
+      }
+    ],
+    "total": 64
+  },
+  "summary": "64 strings match \"(ext:|case:|regex:|file:|folder:|size:|dm:|wholeword:|path:)\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 24,
+    "total": 64
+  },
+  "locations": [],
+  "links": []
+}

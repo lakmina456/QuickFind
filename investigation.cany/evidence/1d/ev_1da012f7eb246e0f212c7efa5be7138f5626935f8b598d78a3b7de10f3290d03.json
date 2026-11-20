@@ -1,0 +1,55 @@
+{
+  "id": "ev_1da012f7eb246e0f212c7efa5be7138f5626935f8b598d78a3b7de10f3290d03",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_browse",
+  "params": {
+    "address": "0x1401ba4d0",
+    "limit": 1,
+    "offset": 0,
+    "section": ".rdata"
+  },
+  "result": {
+    "strings": [
+      {
+        "address": "0x1401ba4d0",
+        "encoding": "ascii",
+        "file_offset": 1805008,
+        "references": 1,
+        "section": ".rdata",
+        "text": "yesterday"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings (showing 1).",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "strings are read from data sections; text built at run time or stored compressed isn't listed"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1401ba4d0"
+    }
+  ],
+  "links": []
+}

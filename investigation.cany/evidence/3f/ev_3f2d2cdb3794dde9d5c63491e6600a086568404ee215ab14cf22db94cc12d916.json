@@ -1,0 +1,51 @@
+{
+  "id": "ev_3f2d2cdb3794dde9d5c63491e6600a086568404ee215ab14cf22db94cc12d916",
+  "subject": {
+    "kind": "directory",
+    "sha256": "7733a92131130fcee6cae8c21da76f1a109b65278bccf86dc89d4a44431df783",
+    "name": "OmniFind"
+  },
+  "operation": "core_target_triage",
+  "params": {
+    "path": null
+  },
+  "result": {
+    "description": "A folder",
+    "kind": "directory",
+    "next_steps": [
+      {
+        "tool": "core_archive_show",
+        "why": "inventory the folder"
+      },
+      {
+        "tool": "core_target_triage",
+        "why": "triage the main executable inside it by path"
+      }
+    ],
+    "plain_english": "OmniFind is a folder (an app bundle, an unpacked app or a project).",
+    "recommended_toolsets": [
+      "core"
+    ],
+    "size": 0
+  },
+  "summary": "OmniFind is a folder (an app bundle, an unpacked app or a project).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "detected_by_content",
+      "message": "the kind is detected from the first bytes and, to break ties, the file name"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [],
+  "links": []
+}

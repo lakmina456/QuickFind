@@ -1,0 +1,480 @@
+{
+  "id": "ev_c6cf10f1e6e5dce2edc7498e7d8f83604e221364224d032d892ffc22528a6f18",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 80,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "^(case|nocase|wholeword|ww|regex|file|folder|ext|path|nopath|size|dm|datemodified|diacritics|parent|child|startwith|endwith|len|attrib|empty|dupe)$"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401b2f3c",
+        "references": [
+          {
+            "from": "0x1401fe028",
+            "function": null
+          },
+          {
+            "from": "0x140202158",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Regex"
+      },
+      {
+        "address": "0x1401b2f54",
+        "references": [
+          {
+            "from": "0x1401fe018",
+            "function": null
+          },
+          {
+            "from": "0x140202148",
+            "function": null
+          },
+          {
+            "from": "0x140202a40",
+            "function": null
+          },
+          {
+            "from": "0x1402063e8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Path"
+      },
+      {
+        "address": "0x1401b2f6c",
+        "references": [
+          {
+            "from": "0x1401fe008",
+            "function": null
+          },
+          {
+            "from": "0x140202138",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Case"
+      },
+      {
+        "address": "0x1401b33c8",
+        "references": [
+          {
+            "from": "0x1400ba94b",
+            "function": "sub_1400ba830"
+          },
+          {
+            "from": "0x1400c841f",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x1401fe860",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "regex"
+      },
+      {
+        "address": "0x1401b3410",
+        "references": [
+          {
+            "from": "0x1400b7449",
+            "function": "sub_1400b6db0"
+          },
+          {
+            "from": "0x1400ba8cb",
+            "function": "sub_1400ba830"
+          },
+          {
+            "from": "0x1400c37e6",
+            "function": "sub_1400c34a0"
+          },
+          {
+            "from": "0x1400c4049",
+            "function": "sub_1400c3f90"
+          },
+          {
+            "from": "0x1400c43f2",
+            "function": "sub_1400c41f0"
+          },
+          {
+            "from": "0x1400c83af",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x1400c8608",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x1401fe7e8",
+            "function": null
+          },
+          {
+            "from": "0x140201358",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "path"
+      },
+      {
+        "address": "0x1401b3424",
+        "references": [
+          {
+            "from": "0x1400f8e85",
+            "function": "sub_1400f8e00"
+          },
+          {
+            "from": "0x1401fe7b8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "parent"
+      },
+      {
+        "address": "0x1401b3700",
+        "references": [
+          {
+            "from": "0x1400ba90b",
+            "function": "sub_1400ba830"
+          },
+          {
+            "from": "0x1400c848f",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x1401fe320",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "diacritics"
+      },
+      {
+        "address": "0x1401b3858",
+        "references": [
+          {
+            "from": "0x1400ba848",
+            "function": "sub_1400ba830"
+          },
+          {
+            "from": "0x1400c82cf",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x1401fe140",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "case"
+      },
+      {
+        "address": "0x1401b410c",
+        "references": [
+          {
+            "from": "0x1400b73c8",
+            "function": "sub_1400b6db0"
+          },
+          {
+            "from": "0x1400bc574",
+            "function": "sub_1400bc190"
+          },
+          {
+            "from": "0x1400c37dd",
+            "function": "sub_1400c34a0"
+          },
+          {
+            "from": "0x1400c4095",
+            "function": "sub_1400c3f90"
+          },
+          {
+            "from": "0x1400c43e9",
+            "function": "sub_1400c41f0"
+          },
+          {
+            "from": "0x1400c85c7",
+            "function": "sub_1400c7fc8"
+          },
+          {
+            "from": "0x140201360",
+            "function": null
+          },
+          {
+            "from": "0x140201928",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "size"
+      },
+      {
+        "address": "0x1401b7fa8",
+        "references": [
+          {
+            "from": "0x14002117a",
+            "function": "sub_14001d7a0"
+          },
+          {
+            "from": "0x140129498",
+            "function": "sub_140129380"
+          },
+          {
+            "from": "0x140202a48",
+            "function": null
+          },
+          {
+            "from": "0x140204128",
+            "function": null
+          },
+          {
+            "from": "0x140205620",
+            "function": null
+          },
+          {
+            "from": "0x1402063f0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Size"
+      },
+      {
+        "address": "0x1401b9e08",
+        "references": [
+          {
+            "from": "0x1402018b8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "datemodified"
+      },
+      {
+        "address": "0x1401b9f14",
+        "references": [
+          {
+            "from": "0x140055237",
+            "function": "sub_140055200"
+          }
+        ],
+        "section": ".rdata",
+        "text": "empty"
+      },
+      {
+        "address": "0x1401bb57c",
+        "references": [
+          {
+            "from": "0x1400b7377",
+            "function": "sub_1400b6db0"
+          },
+          {
+            "from": "0x1400b867b",
+            "function": "sub_1400b8640"
+          },
+          {
+            "from": "0x1400bb295",
+            "function": "sub_1400bb1e0"
+          },
+          {
+            "from": "0x1400c47f6",
+            "function": "sub_1400c46f0"
+          },
+          {
+            "from": "0x1400c5ce4",
+            "function": "sub_1400c5bf0"
+          },
+          {
+            "from": "0x1400c5f03",
+            "function": "sub_1400c5bf0"
+          },
+          {
+            "from": "0x1400c6823",
+            "function": "sub_1400c66d9"
+          }
+        ],
+        "section": ".rdata",
+        "text": "file"
+      },
+      {
+        "address": "0x1401bb584",
+        "references": [
+          {
+            "from": "0x1400b7350",
+            "function": "sub_1400b6db0"
+          },
+          {
+            "from": "0x1400c47ed",
+            "function": "sub_1400c46f0"
+          },
+          {
+            "from": "0x1400c5cbc",
+            "function": "sub_1400c5bf0"
+          },
+          {
+            "from": "0x1400c5ee2",
+            "function": "sub_1400c5bf0"
+          },
+          {
+            "from": "0x1400c6781",
+            "function": "sub_1400c66d9"
+          }
+        ],
+        "section": ".rdata",
+        "text": "folder"
+      },
+      {
+        "address": "0x1401bb9e4",
+        "references": [
+          {
+            "from": "0x1400b93d8",
+            "function": "sub_1400b9196"
+          }
+        ],
+        "section": ".rdata",
+        "text": "FILE"
+      },
+      {
+        "address": "0x1401bbaac",
+        "references": [
+          {
+            "from": "0x1400b91ff",
+            "function": "sub_1400b9196"
+          },
+          {
+            "from": "0x1400c189e",
+            "function": "sub_1400c162a"
+          },
+          {
+            "from": "0x1400c18b7",
+            "function": "sub_1400c162a"
+          },
+          {
+            "from": "0x1402021d0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "FOLDER"
+      },
+      {
+        "address": "0x1401bd518",
+        "references": [
+          {
+            "from": "0x140202150",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Diacritics"
+      },
+      {
+        "address": "0x1401beaa0",
+        "references": [
+          {
+            "from": "0x1400c833f",
+            "function": "sub_1400c7fc8"
+          }
+        ],
+        "section": ".rdata",
+        "text": "wholeword"
+      },
+      {
+        "address": "0x1401c5f80",
+        "references": [
+          {
+            "from": "0x140121ea1",
+            "function": "sub_140121cc0"
+          },
+          {
+            "from": "0x140204640",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Folder"
+      },
+      {
+        "address": "0x1401ccd28",
+        "references": [
+          {
+            "from": "0x140203840",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "DIACRITICS"
+      },
+      {
+        "address": "0x1401cdcfc",
+        "references": [
+          {
+            "from": "0x1402034e8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "REGEX"
+      },
+      {
+        "address": "0x1401cdd04",
+        "references": [
+          {
+            "from": "0x1402034e0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "PATH"
+      },
+      {
+        "address": "0x1401cdd1c",
+        "references": [
+          {
+            "from": "0x1402034d0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "CASE"
+      }
+    ],
+    "total": 23
+  },
+  "summary": "23 strings match \"^(case|nocase|wholeword|ww|regex|file|folder|ext|path|nopath|size|dm|datemodified|diacritics|parent|child|startwith|endwith|len|attrib|empty|dupe)$\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 23,
+    "total": 23
+  },
+  "locations": [],
+  "links": []
+}

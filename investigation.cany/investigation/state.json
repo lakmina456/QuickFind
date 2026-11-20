@@ -1,0 +1,48 @@
+{
+  "revision": 5,
+  "brief": {
+    "question": "How does Everything's file search work (index, search syntax, result columns, sorting, status bar) so a similar Rust/egui app can be built?",
+    "purpose": "Rebuild a similar desktop file-search app with the same core features",
+    "targets": [
+      "C:\\Program Files\\Everything\\Everything.exe"
+    ],
+    "constraints": [],
+    "done_when": "MECHANICS.md lists columns, search modifiers, sort rules, status text with sources; app builds and screenshots."
+  },
+  "plan": [],
+  "hypotheses": [],
+  "findings": [
+    {
+      "id": "fnd_1",
+      "statement": "Built-in filters: Everything, Audio, Compressed, Document, Executable, Folder, Picture, Video, each defined as an ext: list (or folder:) in sub_1400c15c0; size keywords empty/tiny/small/medium/large/huge/gigantic use thresholds 10 KB, 100 KB, 1 MB, 16 MB, 128 MB (sub_140055200, data 0x1401fed10); size units are powers of 1024 and a unit value matches a 1 KB-wide band.",
+      "evidence_ids": [
+        "ev_ce3aedbaf3738ee5e84f015788e09a720851417a829c5e42d53c09f147f408a9",
+        "ev_398c1933f10e1568ffed55c29af4dc5aa0368035b38e75bf59d2e0c9a8258a74",
+        "ev_2816b8bc26a8c1f7011b71a82d33dda27542d5fc4c701ac26bfa025b9816993f"
+      ],
+      "confidence": "observed"
+    },
+    {
+      "id": "fnd_2",
+      "statement": "Search syntax (help text 0x1401c81e0): space=AND, |=OR, !=NOT, < > grouping, \"\" phrase, * and ? wildcards; modifiers case:, diacritics:, file:, folder:, path:, regex:, wholeword:/ww:, wfn:, startwith:, endwith: with no- prefix to disable; functions ext:, size:, dm:/dc:, infolder:, len:, count:, dupe:, empty:; macros audio: zip: doc: exe: pic: video:. Status bar formats '%s objects' and '%s objects selected'; default columns Name, Path, Size, Date Modified.",
+      "evidence_ids": [
+        "ev_8c2a563d1a9d07e7d852d0cbbd14ba7e527f1808ad3d3db06a738a0d1050d007",
+        "ev_a36fb0a5a5e222035e2ab69c7c087e44476794f88ab8e410050a7c783bf9f815",
+        "ev_26a287e783b7a7fc051e1a8d47d4e99a48efa35d6324b512de21fa6b9fcc4cd1",
+        "ev_9e1ce379ac62785e229fdaae8b1ffa22e0da2ae9a31df0dba97f835efe1f01cb"
+      ],
+      "confidence": "observed"
+    },
+    {
+      "id": "fnd_3",
+      "statement": "The original's window is about 1000x720 inside the frame, titled '<search> - Everything', with menus File/Edit/View/Search/Bookmarks/Tools/Help, a full-width search box (filter box hidden), Name (~440 px) and Path (~505 px) columns visible, a caret above the sorted header and a grey tint on the sorted column; it accepts -search and -sort on the command line.",
+      "evidence_ids": [
+        "ev_3dd9c486b489c7e0173eff98aa807a0265c72ef930d1e5999cd5c5560eea6b6c",
+        "ev_67113991d1a4c8cc477805939cce62c38d7d474d89dcba4b4a9e08ee3c8c4836"
+      ],
+      "confidence": "observed"
+    }
+  ],
+  "handoff": "State: Quickfind (Rust/eframe 0.31) in app/ builds and passes build + screenshot checks. Indexes all fixed drives with a parallel folder walk (3.18M entries in ~5-25 s), saves %LOCALAPPDATA%\\Quickfind\\index.bin in name order (reload ~0.6-1 s), rescans at start, live-updates via notify. Searches 10-130 ms on 3.2M entries; peak RAM ~400-480 MB (names in one shared block). Search syntax, filters, size bands and dates follow MECHANICS.md (sub_140116168, sub_140055200, sub_1400c15c0, help 0x1401c81e0). Bookmarks, export (.efu), -search/-filter/-sort/-case/-matchpath options, hidden --build-index timing mode.\nToolchain trap: no MSVC/SDK on this PC -> app/rust-toolchain.toml pins stable-x86_64-pc-windows-gnu; .cargo/config.toml adds -LC:/Windows/System32 for shlwapi; Cargo.lock pins arboard 3.4.1, winapi-util 0.1.9, parking_lot 0.12.3/core 0.9.10, libloading 0.8.6, chrono 0.4.39, webbrowser 1.0.1 to avoid raw-dylib (bundled dlltool needs a missing assembler). Don't `cargo update` blindly.\nOpen: size column format (unk_e72dcc78fb827825, blocked: original never finishes loading its DB without admin). Column widths deliberately 340/380 (original ~440/505 with Size/Date scrolled off). Not done: NTFS MFT/USN reading, content:/media functions, multiple windows, ETP/HTTP servers.\nNext ideas: Options window (remember columns/widths, hide system/hidden files, exclude folders), match highlighting in results.",
+  "updated": "2026-11-15T16:41:49Z"
+}

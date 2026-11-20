@@ -1,0 +1,80 @@
+{
+  "id": "ev_59af9230f8ffdd2d62983d8d3d2ee1a38880ae5d1982c4a14aa4c27896eff9f8",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_functions_decompile",
+  "params": {
+    "addresses": [
+      "sub_1400f6f20",
+      "sub_1401273c5"
+    ]
+  },
+  "result": {
+    "failed": 0,
+    "items": [
+      {
+        "entry": "0x1400f6f20",
+        "input": "sub_1400f6f20",
+        "limitations": [
+          "register_level",
+          "calling_convention_assumed",
+          "conditions_from_flags",
+          "unstructured_flow"
+        ],
+        "ok": true,
+        "pseudo_code": "int64_t sub_1400f6f20(int64_t rcx, int64_t rdx)\n{\n    stack_18 = rbx;\n    rax = *(uint64_t*)0x14020ecd8;\n    rax ^= rsp;\n    stack_230 = rax;\n    rbx = rdx;\n    sub_1400bdd90(rbx, \"Filename,Size,Date Modified,Date Created,Attributes\\r\\n\");\n    GetTimeZoneInformation(&stack_180);\n    sub_14017e740(&stack_60);\n    rax = sub_140160110(rbp);\n    edi = 0;\n    esi = eax;\n    if (eax > 0) {\n        while (true) {\nlabel_1400f6f90:\n            sub_140160570(rbp, edi, 0x17, &stack_20);\n            sub_140179410(&stack_60);\n            sub_1401602d0(rbp, edi, &stack_60);\n            sub_1400bd940(rbx, stack_68);\n            sub_1400bdd90(rbx, &data_1401b2f8c);\n            r8 = stack_20;\n            if (r8 != -1) {\n                sub_1400bdea0(rbx, \"%I64u\");\n            }\n        }\n    }\nlabel_1400f7074:\n    sub_1400012c0(&stack_60);\n    rcx = stack_230;\n    rcx ^= rsp;\n    sub_1401aa5a0();\n    rbx = stack_270;\n    return rax;\n    sub_1400bdd90(rbx, &data_1401b2f8c);\n    r8 = stack_28;\n    if (r8 != -1) {\n        sub_1400bdea0(rbx, \"%I64u\");\n    }\n    sub_1400bdd90(rbx, &data_1401b2f8c);\n    r8 = stack_30;\n    if (r8 != -1) {\n        sub_1400bdea0(rbx, \"%I64u\");\n    }\n    sub_1400bdd90(rbx, &data_1401b2f8c);\n    sub_1400bdea0(rbx, \"%u\\r\\n\", stack_40);\n    edi += 1;\n    if (edi < esi) {\n        goto label_1400f6f90;\n    }\n    goto label_1400f7074;\n}\n",
+        "signature": "int64_t sub_1400f6f20(int64_t rcx, int64_t rdx)",
+        "structured": false
+      },
+      {
+        "entry": "0x1401273c5",
+        "input": "sub_1401273c5",
+        "limitations": [
+          "register_level",
+          "calling_convention_assumed",
+          "conditions_from_flags",
+          "unstructured_flow"
+        ],
+        "ok": true,
+        "pseudo_code": "int64_t sub_1401273c5()\n{\n    stack_190 = rbp;\n    sub_14017e740();\n    sub_140179170(&stack_20, rdi);\n    r11 = stack_28;\n    ecx = *(uint8_t*)(r11);\n    rax = r11;\n    if (cl != 0) {\n        while (true) {\nlabel_1401273f0:\n            if (cl != 0x5c) {\n                if (cl == 0x2f) {\n                    ebx = eax;\n                    ebx -= r11d;\n                    ebx += 1;\n                }\n            } else {\n                ebx = eax;\n                ebx -= r11d;\n                ebx += 1;\n            }\n        }\n    }\nlabel_140127417:\n    rax = ebx;\n    *(uint8_t*)(rax + r11) = 0;\n    if (*(uint8_t*)0x14020ff15 == 0) {\n        ebx = 0;\n    } else {\n        r8d = *(uint32_t*)(r12 + 0x58);\n        r9 = *(uint64_t*)(r12 + 0x50);\n        if (r8d != 0) {\n            r11 = stack_28;\n            r10d = *(uint8_t*)(r11);\n            while (true) {\n                rax = *(uint64_t*)(r9);\n                rax += 0x30;\n                if (r10l == 0) {\nlabel_140127466:\n                    r9 += 8;\n                    r8d -= 1;\n                    if (r8d != 0) {\n                        continue;\n                    } else {\n                        goto label_140127470;\n                    }\n                    break;\n                } else {\n                    rdx = r11;\n                    ecx = r10l;\n                    rdx -= rax;\n                    while (true) {\n                        if (*(uint8_t*)(rax) != cl) {\n                            goto label_140127472;\n                        } else {\n                            cl = *(uint8_t*)(rdx + rax + 1);\n                            rax += 1;\n                            if (cl != 0) {\n                                continue;\n                            } else {\n                                goto label_140127466;\n                            }\n                            break;\n                        }\n                        break;\n                    }\n                }\n                break;\n            }\n        }\n    }\nlabel_140127478:\n    sub_1400bdea0(rsi, \"Filename,Size,Date Modified,Date Created,Attributes\\r\\n\");\n    rdi = *(uint64_t*)(r12 + 0x50);\n    if (ebp != 0) {\n        rbx = ebx;\n        while (true) {\nlabel_1401274a0:\n            rax = *(uint64_t*)(rdi);\n            sub_1400bd940(rsi, rbx + rax + 0x30);\n            sub_1400bd8e0(rsi, 0x2c);\n            r11 = *(uint64_t*)(rdi);\n            r8 = *(uint64_t*)(r11);\n            if (r8 != -1) {\n                sub_1400bdea0(rsi, \"%I64u\");\n            }\n        }\n    }\nlabel_140127542:\n    rax = sub_1400bdfa0(rsi);\n    ebx = eax;\n    sub_1400012c0(&stack_20);\n    if (ebx == 0) {\n        r8 = *(uint64_t*)0x140202708;\n        sub_1400d5d80(*(uint64_t*)(r12), 16, *(uint64_t*)(r8 + 0x18c0), *(uint64_t*)(r8 + 0x19c0));\n    } else {\n        *(uint32_t*)(r12 + 0x20) = 0;\n    }\n    SetCursor(r13);\n    InvalidateRect(*(uint64_t*)(r12 + 16), 0, 0);\n    sub_140126a50(r12);\n    eax = ebx;\n    rcx = stack_140;\n    rcx ^= rsp;\n    sub_1401aa5a0();\n    return rax;\n    cl = *(uint8_t*)(rax + 1);\n    rax += 1;\n    if (cl != 0) {\n        goto label_1401273f0;\n    }\n    goto label_140127417;\nlabel_140127470:\n    goto label_140127478;\nlabel_140127472:\n    ebx = 0;\n    goto label_140127478;\n    sub_1400bd8e0(rsi, 0x2c);\n    r11 = *(uint64_t*)(rdi);\n    r8 = *(uint64_t*)(r11 + 8);\n    if (r8 != 0) {\n        sub_1400bdea0(rsi, \"%I64u\");\n    }\n    sub_1400bd8e0(rsi, 0x2c);\n    r11 = *(uint64_t*)(rdi);\n    r8 = *(uint64_t*)(r11 + 16);\n    if (r8 != 0) {\n        sub_1400bdea0(rsi, \"%I64u\");\n    }\n    rax = *(uint64_t*)(rdi);\n    sub_1400bdea0(rsi, \",%u\\r\\n\", *(uint32_t*)(rax + 0x20));\n    rdi += 8;\n    if (ebp != 0) {\n        goto label_1401274a0;\n    }\n    goto label_140127542;\n}\n",
+        "signature": "int64_t sub_1401273c5()",
+        "structured": false
+      }
+    ],
+    "succeeded": 2
+  },
+  "summary": "Decompiled 2 of 2 functions.",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "pseudo_code_inferred",
+      "message": "pseudo-C from the clean-room lifter is register-level and approximate"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1400f6f20"
+    },
+    {
+      "kind": "address",
+      "value": "0x1401273c5"
+    }
+  ],
+  "links": []
+}

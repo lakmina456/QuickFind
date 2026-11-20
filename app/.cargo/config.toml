@@ -1,0 +1,5 @@
+# This computer has no Visual C++ tools, so the app builds with Rust's GNU toolchain.
+# Its bundled libraries lack shlwapi, so the linker may read the system DLL directly
+# (searched last, after the bundled import libraries).
+[target.x86_64-pc-windows-gnu]
+rustflags = ["-C", "link-arg=-LC:/Windows/System32"]

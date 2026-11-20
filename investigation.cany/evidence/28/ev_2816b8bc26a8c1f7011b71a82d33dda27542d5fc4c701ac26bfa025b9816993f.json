@@ -1,0 +1,42 @@
+{
+  "id": "ev_2816b8bc26a8c1f7011b71a82d33dda27542d5fc4c701ac26bfa025b9816993f",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_bytes_show",
+  "params": {
+    "address": "0x1401fed10",
+    "length": 20
+  },
+  "result": {
+    "address": "0x1401fed10",
+    "ascii": ".(..................",
+    "file_offset": 2085648,
+    "hex": "0028000000900100000010000000000100000008",
+    "length": 20
+  },
+  "summary": "20 bytes at 0x1401fed10.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 20,
+    "total": 20
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1401fed10"
+    }
+  ],
+  "links": []
+}

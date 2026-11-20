@@ -1,0 +1,63 @@
+//! Built-in filters and macros (sub_1400c15c0 and the help text in the original).
+
+pub const AUDIO: &str = "aac;ac3;aif;aifc;aiff;au;cda;dts;fla;flac;it;m1a;m2a;m3u;m4a;m4b;m4p;mid;midi;mka;mod;mp2;mp3;mpa;ogg;ra;rmi;snd;spc;umx;voc;wav;wma;xm";
+pub const COMPRESSED: &str = "7z;ace;arj;bz2;cab;gz;gzip;jar;r00;r01;r02;r03;r04;r05;r06;r07;r08;r09;r10;r11;r12;r13;r14;r15;r16;r17;r18;r19;r20;r21;r22;r23;r24;r25;r26;r27;r28;r29;rar;tar;tgz;z;zip";
+pub const DOCUMENT: &str = "c;chm;cpp;csv;cxx;doc;docm;docx;dot;dotm;dotx;h;hpp;htm;html;hxx;ini;java;lua;mht;mhtml;odt;pdf;potx;potm;ppam;ppsm;ppsx;pps;ppt;pptm;pptx;rtf;sldm;sldx;thmx;txt;vsd;wpd;wps;wri;xlam;xls;xlsb;xlsm;xlsx;xltm;xltx;xml";
+pub const EXECUTABLE: &str = "bat;cmd;exe;msi;msp;scr";
+pub const PICTURE: &str = "ani;bmp;gif;ico;jpe;jpeg;jpg;pcx;png;psd;tga;tif;tiff;webp;wmf";
+pub const VIDEO: &str = "3g2;3gp;3gp2;3gpp;amr;amv;asf;avi;bdmv;bik;d2v;divx;drc;dsa;dsm;dss;dsv;evo;f4v;flc;fli;flic;flv;hdmov;ifo;ivf;m1v;m2p;m2t;m2ts;m2v;m4v;mkv;mp2v;mp4;mp4v;mpe;mpeg;mpg;mpls;mpv2;mpv4;mov;mts;ogm;ogv;pss;pva;qt;ram;ratdvd;rm;rmm;rmvb;roq;rpm;smil;smk;swf;tp;tpr;ts;vob;vp6;webm;wm;wmp;wmv";
+
+/// Macros usable in a search: `audio:`, `zip:` ...
+pub const MACROS: &[(&str, &str)] = &[
+    ("audio:", AUDIO),
+    ("zip:", COMPRESSED),
+    ("doc:", DOCUMENT),
+    ("exe:", EXECUTABLE),
+    ("pic:", PICTURE),
+    ("video:", VIDEO),
+];
+
+/// The filter list: (label, search it adds).
+pub const FILTERS: &[(&str, &str)] = &[
+    ("Everything", ""),
+    ("Audio", "audio:"),
+    ("Compressed", "zip:"),
+    ("Document", "doc:"),
+    ("Executable", "exe:"),
+    ("Folder", "folder:"),
+    ("Picture", "pic:"),
+    ("Video", "video:"),
+];
+
+/// Which colour family a file name belongs to, for its little icon.
+pub fn kind_of(ext: &str) -> Kind {
+    let has = |list: &str| list.split(';').any(|e| e.eq_ignore_ascii_case(ext));
+    if ext.is_empty() {
+        Kind::Other
+    } else if has(EXECUTABLE) || ext.eq_ignore_ascii_case("dll") {
+        Kind::Exe
+    } else if has(PICTURE) {
+        Kind::Picture
+    } else if has(AUDIO) {
+        Kind::Audio
+    } else if has(VIDEO) {
+        Kind::Video
+    } else if has(COMPRESSED) {
+        Kind::Archive
+    } else if has(DOCUMENT) {
+        Kind::Document
+    } else {
+        Kind::Other
+    }
+}
+
+#[derive(Clone, Copy, PartialEq, Eq)]
+pub enum Kind {
+    Exe,
+    Picture,
+    Audio,
+    Video,
+    Archive,
+    Document,
+    Other,
+}

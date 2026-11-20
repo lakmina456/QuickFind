@@ -1,0 +1,45 @@
+{
+  "id": "ev_398c1933f10e1568ffed55c29af4dc5aa0368035b38e75bf59d2e0c9a8258a74",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "sub_140055200"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x140055200",
+    "function": "FUN_140055200",
+    "pseudo_code": "\r\nvoid FUN_140055200(undefined8 *param_1,ulonglong *param_2,int param_3)\r\n\r\n{\r\n  char *pcVar1;\r\n  byte bVar2;\r\n  int iVar3;\r\n  longlong lVar4;\r\n  longlong lVar5;\r\n  byte *pbVar6;\r\n  ulonglong uVar7;\r\n  ulonglong uVar8;\r\n  ulonglong local_res8;\r\n  \r\n  if (*(char *)*param_1 == '\\0') {\r\n    *param_2 = 0;\r\n    param_2[1] = 0xfffffffffffffffe;\r\n    return;\r\n  }\r\n  iVar3 = FUN_140176980(param_1,\"empty\");\r\n  if (iVar3 == 0) {\r\n    iVar3 = FUN_140176980(param_1,&DAT_1401b9f0c);\r\n    if (iVar3 == 0) {\r\n      iVar3 = FUN_140176980(param_1,\"small\");\r\n      if (iVar3 == 0) {\r\n        iVar3 = FUN_140176980(param_1,\"medium\");\r\n        if (iVar3 == 0) {\r\n          iVar3 = FUN_140176980(param_1,\"large\");\r\n          if (iVar3 == 0) {\r\n            iVar3 = FUN_140176980(param_1,&DAT_1401b9eec);\r\n            if (iVar3 == 0) {\r\n              iVar3 = FUN_140176980(param_1,\"gigantic\");\r\n              if (iVar3 == 0) {\r\n                iVar3 = FUN_140176980(param_1,\"unknown\");\r\n                if (iVar3 == 0) {\r\n                  lVar4 = FUN_1400551b0(param_1);\r\n                  uVar8 = 0;\r\n                  local_res8 = 1;\r\n                  iVar3 = FUN_140176950(param_1,&DAT_1401b9ed0);\r\n                  if ((iVar3 == 0) && (pcVar1 = (char *)*param_1, *pcVar1 == '.')) {\r\n                    bVar2 = pcVar1[1];\r\n                    pbVar6 = (byte *)(pcVar1 + 1);\r\n                    if (bVar2 != 0) {\r\n                      local_res8 = 1;\r\n                      do {\r\n                        if ((bVar2 < 0x30) || (0x39 < bVar2)) break;\r\n                        pbVar6 = pbVar6 + 1;\r\n                        local_res8 = local_res8 * 10;\r\n                        uVar8 = (longlong)(int)(bVar2 - 0x30) + uVar8 * 10;\r\n                        bVar2 = *pbVar6;\r\n                      } while (bVar2 != 0);\r\n                    }\r\n                    *param_1 = pbVar6;\r\n                  }\r\n                  iVar3 = FUN_140176980(param_1);\r\n                  if (iVar3 == 0) {\r\n                    iVar3 = FUN_140176980(param_1);\r\n                    if (iVar3 == 0) {\r\n                      iVar3 = FUN_140176980(param_1);\r\n                      if (iVar3 == 0) {\r\n                        iVar3 = FUN_140176980(param_1);\r\n                        if (iVar3 == 0) {\r\n                          iVar3 = FUN_140176980(param_1);\r\n                          if (iVar3 == 0) {\r\n                            iVar3 = FUN_140176980(param_1);\r\n                            if (iVar3 == 0) {\r\n                              FUN_140176980(param_1);\r\n                              uVar7 = lVar4 + uVar8 / local_res8;\r\n                              uVar8 = uVar7;\r\n                              goto LAB_1400554e0;\r\n                            }\r\n                            lVar5 = 0x400;\r\n                          }\r\n                          else {\r\n                            lVar5 = 0x100000;\r\n                          }\r\n                        }\r\n                        else {\r\n                          lVar5 = 0x40000000;\r\n                        }\r\n                      }\r\n                      else {\r\n                        lVar5 = 0x10000000000;\r\n                      }\r\n                    }\r\n                    else {\r\n                      lVar5 = 0x4000000000000;\r\n                    }\r\n                  }\r\n                  else {\r\n                    lVar5 = 0x1000000000000000;\r\n                  }\r\n                  uVar8 = (lVar5 * uVar8) / local_res8 + 0x3ff + lVar5 * lVar4 & 0xfffffffffffffc00;\r\n                  uVar7 = uVar8 - 0x3ff;\r\n                }\r\n                else {\r\n                  uVar7 = 0xffffffffffffffff;\r\n                  uVar8 = 0xffffffffffffffff;\r\n                }\r\n              }\r\n              else {\r\n                uVar7 = (ulonglong)(DAT_1401fed20 + 1);\r\n                uVar8 = 0xfffffffffffffffe;\r\n              }\r\n            }\r\n            else {\r\n              uVar7 = (ulonglong)(DAT_1401fed1c + 1);\r\n              uVar8 = (longlong)DAT_1401fed20;\r\n            }\r\n          }\r\n          else {\r\n            uVar7 = (ulonglong)(DAT_1401fed18 + 1);\r\n            uVar8 = (longlong)DAT_1401fed1c;\r\n          }\r\n        }\r\n        else {\r\n          uVar7 = (ulonglong)(DAT_1401fed14 + 1);\r\n          uVar8 = (longlong)DAT_1401fed18;\r\n        }\r\n      }\r\n      else {\r\n        uVar7 = (ulonglong)(DAT_1401fed10 + 1);\r\n        uVar8 = (longlong)DAT_1401fed14;\r\n      }\r\n    }\r\n    else {\r\n      uVar7 = 1;\r\n      uVar8 = (longlong)DAT_1401fed10;\r\n    }\r\n  }\r\n  else {\r\n    uVar7 = 0;\r\n    uVar8 = uVar7;\r\n  }\r\nLAB_1400554e0:\r\n  if ((param_3 != 0) &&\r\n     ((iVar3 = FUN_140176910(param_1,&DAT_1401b9ed0), iVar3 != 0 ||\r\n      (iVar3 = FUN_140176910(param_1,&DAT_1401b9eb0), iVar3 != 0)))) {\r\n    FUN_140055200(param_1,param_2,0);\r\n    uVar8 = param_2[1];\r\n  }\r\n  *param_2 = uVar7;\r\n  param_2[1] = uVar8;\r\n  return;\r\n}\r\n\r\n",
+    "signature": "void FUN_140055200(undefined8 *param_1,ulonglong *param_2,int param_3);"
+  },
+  "summary": "Pseudo-C for FUN_140055200 from the Deep engine (146 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x140055200"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

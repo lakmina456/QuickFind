@@ -1,0 +1,88 @@
+{
+  "id": "ev_caf46dcf79965c5ac91e8893e15c19d5462328868a119601d8f8e38db28b162d",
+  "subject": {
+    "kind": "pe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "name": "Everything.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 30,
+    "mode": "regex",
+    "offset": 0,
+    "pattern": "(%d KB|%s KB| KB| MB| GB| TB|%I64u KB)"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1401bf450",
+        "references": [
+          {
+            "from": "0x1402058b0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "The size of the buffer for storing changes made to this folder, subfolder and files.\nChanges will be missed if Everything is unable to process this buffer fast enough.\nNetwork drives are limited to 64 KB."
+      },
+      {
+        "address": "0x1401c1570",
+        "references": [
+          {
+            "from": "0x1402054c8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Select the size format.\nKB = 1024 bytes.\nMB = 1024 KB.\nGB = 1024 MB.\n"
+      },
+      {
+        "address": "0x1401cd6f0",
+        "references": [
+          {
+            "from": "0x140203630",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Display sizes in Bytes, KB or MB depending on the size or always display sizes in Bytes or KB."
+      },
+      {
+        "address": "0x1402098c7",
+        "references": [],
+        "section": ".data",
+        "text": "g(g kbkyk"
+      },
+      {
+        "address": "0x14020d091",
+        "references": [],
+        "section": ".data",
+        "text": "g(g kbkyk"
+      }
+    ],
+    "total": 5
+  },
+  "summary": "5 strings match \"(%d KB|%s KB| KB| MB| GB| TB|%I64u KB)\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 5,
+    "total": 5
+  },
+  "locations": [],
+  "links": []
+}
