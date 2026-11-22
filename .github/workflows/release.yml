@@ -14,10 +14,17 @@ jobs:
       - run: rustup toolchain install stable-x86_64-pc-windows-msvc --profile minimal
       - run: cargo build --release
         working-directory: app
-      - run: Compress-Archive app/target/release/QuickFind.exe QuickFind-windows-x64.zip
+      - name: Portable zip
+        run: Compress-Archive app/target/release/QuickFind.exe QuickFind-windows-x64.zip
+      - name: Installer
+        run: |
+          choco install innosetup -y --no-progress
+          $v = "${{ github.ref_name }}".TrimStart('v')
+          & "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe" "/DAppVersion=$v" installer\QuickFind.iss
       - uses: softprops/action-gh-release@v2
         with:
           files: |
             app/target/release/QuickFind.exe
             QuickFind-windows-x64.zip
+            dist/QuickFind-Setup-*.exe
           generate_release_notes: true
