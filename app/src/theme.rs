@@ -1,4 +1,4 @@
-//! Colours, accents and fonts, taken from the OmniFind light/dark tokens.
+//! Colours, accents and fonts, taken from the QuickFind light/dark tokens.
 
 use eframe::egui::{self, Color32, CornerRadius, FontFamily, FontId, Stroke, Visuals};
 

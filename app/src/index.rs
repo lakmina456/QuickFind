@@ -262,7 +262,7 @@ pub fn cache_path() -> PathBuf {
     let base = std::env::var_os("LOCALAPPDATA")
         .map(PathBuf::from)
         .unwrap_or_else(std::env::temp_dir);
-    base.join("Quickfind").join("index.bin")
+    base.join("QuickFind").join("index.bin")
 }
 
 pub fn save(index: &Index) -> std::io::Result<()> {

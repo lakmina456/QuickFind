@@ -71,7 +71,7 @@ fn main() -> eframe::Result<()> {
         .with_decorations(false)
         .with_inner_size([1280.0, 820.0])
         .with_min_inner_size([900.0, 480.0]);
-    if let Ok(img) = image::load_from_memory(include_bytes!("../assets/OmniFind.png")) {
+    if let Ok(img) = image::load_from_memory(include_bytes!("../assets/QuickFind.png")) {
         let rgba = img.to_rgba8();
         let (w, h) = rgba.dimensions();
         viewport = viewport.with_icon(egui::IconData { rgba: rgba.into_raw(), width: w, height: h });

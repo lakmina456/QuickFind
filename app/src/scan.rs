@@ -271,7 +271,7 @@ const JUNK_PATHS: [&str; 20] = [
     r"\appdata\roaming\cursor\cache\", r"\appdata\roaming\cursor\cacheddata\",
 ];
 
-/// Junk filter (same lists as OmniFind): lock files, caches, VCS folders, Recycle Bin ...
+/// Junk filter (same lists as QuickFind): lock files, caches, VCS folders, Recycle Bin ...
 fn is_junk(dir: &str, name: &str, is_dir: bool) -> bool {
     if name.starts_with("~$") || name.starts_with("~~") {
         return true;

@@ -1,4 +1,4 @@
-//! Title bar, tabs, search card, file-type pills and the status bar (the OmniFind layout).
+//! Title bar, tabs, search card, file-type pills and the status bar (the QuickFind layout).
 
 use super::App;
 use crate::platform::thousands;
@@ -37,7 +37,7 @@ impl App {
             ui.painter().rect_filled(r, 7.0, pal.accent_fill);
             ui.painter().text(r.center(), Align2::CENTER_CENTER, "\u{E721}", theme::icons(12.0), pal.on_accent);
             ui.add_space(9.0);
-            ui.label(RichText::new("OmniFind").font(theme::semibold(15.0)).color(pal.text));
+            ui.label(RichText::new("QuickFind").font(theme::semibold(15.0)).color(pal.text));
             ui.add_space(14.0);
             self.menus(ui, ctx);
             ui.with_layout(Layout::right_to_left(Align::Center), |ui| {

@@ -1,0 +1,23 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      RUSTUP_TOOLCHAIN: stable-x86_64-pc-windows-msvc   # overrides rust-toolchain.toml (GNU); MSVC has rc.exe for the icon
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup toolchain install stable-x86_64-pc-windows-msvc --profile minimal
+      - run: cargo build --release
+        working-directory: app
+      - run: Compress-Archive app/target/release/QuickFind.exe QuickFind-windows-x64.zip
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            app/target/release/QuickFind.exe
+            QuickFind-windows-x64.zip
+          generate_release_notes: true

@@ -1,0 +1,99 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!-- QuickFind light — tokens from QuickFind.html :root -->
+  <Color x:Key="BgColor">#EFF2F7</Color>
+  <Color x:Key="PanelColor">#FFFFFF</Color>
+  <Color x:Key="Panel2Color">#F6F8FC</Color>
+  <Color x:Key="RaisedColor">#F6F8FC</Color>
+  <Color x:Key="SidebarColor">#EFF2F7</Color>
+  <Color x:Key="TextColor">#0F1B2D</Color>
+  <Color x:Key="DimColor">#56637A</Color>
+  <Color x:Key="AccentColor">#1F57D1</Color>
+  <Color x:Key="AccentFillColor">#2A62E0</Color>
+  <Color x:Key="AccentSoftColor">#E3ECFF</Color>
+  <Color x:Key="AccentInkColor">#1A47B3</Color>
+  <Color x:Key="OnAccentColor">#FFFFFF</Color>
+  <Color x:Key="SelColor">#E6EEFF</Color>
+  <Color x:Key="HoverColor">#F2F5FA</Color>
+  <Color x:Key="LineColor">#DAE1EC</Color>
+  <Color x:Key="Line2Color">#E7ECF4</Color>
+  <Color x:Key="AltRowColor">#FFFFFF</Color>
+  <Color x:Key="HlColor">#FFE7A0</Color>
+  <Color x:Key="HlInkColor">#3B2A00</Color>
+  <Color x:Key="Chk1Color">#E9EDF3</Color>
+  <Color x:Key="Chk2Color">#FFFFFF</Color>
+  <Color x:Key="DangerColor">#C42B1C</Color>
+  <Color x:Key="SuccessColor">#16A34A</Color>
+
+  <!-- Category badge pairs -->
+  <Color x:Key="BadgePicturesBg">#D3EFEC</Color>
+  <Color x:Key="BadgePicturesInk">#0A5A54</Color>
+  <Color x:Key="BadgeDocumentsBg">#E4E6FB</Color>
+  <Color x:Key="BadgeDocumentsInk">#2E3A94</Color>
+  <Color x:Key="BadgeAudioBg">#EBE0F8</Color>
+  <Color x:Key="BadgeAudioInk">#553086</Color>
+  <Color x:Key="BadgeVideoBg">#FBE6D0</Color>
+  <Color x:Key="BadgeVideoInk">#7A3E06</Color>
+  <Color x:Key="BadgeArchivesBg">#E9E4DA</Color>
+  <Color x:Key="BadgeArchivesInk">#5A4A2A</Color>
+  <Color x:Key="BadgeAppsBg">#D8F0DE</Color>
+  <Color x:Key="BadgeAppsInk">#14602A</Color>
+  <Color x:Key="BadgeFoldersBg">#FBEFC2</Color>
+  <Color x:Key="BadgeFoldersInk">#6B5200</Color>
+  <Color x:Key="BadgeOtherBg">#E4E8EE</Color>
+  <Color x:Key="BadgeOtherInk">#3D4A5C</Color>
+
+  <SolidColorBrush x:Key="BgBrush" Color="{StaticResource BgColor}"/>
+  <SolidColorBrush x:Key="PanelBrush" Color="{StaticResource PanelColor}"/>
+  <SolidColorBrush x:Key="Panel2Brush" Color="{StaticResource Panel2Color}"/>
+  <SolidColorBrush x:Key="RaisedBrush" Color="{StaticResource RaisedColor}"/>
+  <SolidColorBrush x:Key="SidebarBrush" Color="{StaticResource SidebarColor}"/>
+  <SolidColorBrush x:Key="TextBrush" Color="{StaticResource TextColor}"/>
+  <SolidColorBrush x:Key="DimBrush" Color="{StaticResource DimColor}"/>
+  <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
+  <SolidColorBrush x:Key="AccentFillBrush" Color="{StaticResource AccentFillColor}"/>
+  <SolidColorBrush x:Key="AccentSoftBrush" Color="{StaticResource AccentSoftColor}"/>
+  <SolidColorBrush x:Key="AccentInkBrush" Color="{StaticResource AccentInkColor}"/>
+  <SolidColorBrush x:Key="OnAccentBrush" Color="{StaticResource OnAccentColor}"/>
+  <SolidColorBrush x:Key="SelBrush" Color="{StaticResource SelColor}"/>
+  <SolidColorBrush x:Key="HoverBrush" Color="{StaticResource HoverColor}"/>
+  <SolidColorBrush x:Key="LineBrush" Color="{StaticResource LineColor}"/>
+  <SolidColorBrush x:Key="Line2Brush" Color="{StaticResource Line2Color}"/>
+  <SolidColorBrush x:Key="AltRowBrush" Color="{StaticResource AltRowColor}"/>
+  <SolidColorBrush x:Key="HlBrush" Color="{StaticResource HlColor}"/>
+  <SolidColorBrush x:Key="HlInkBrush" Color="{StaticResource HlInkColor}"/>
+  <SolidColorBrush x:Key="Chk1Brush" Color="{StaticResource Chk1Color}"/>
+  <SolidColorBrush x:Key="Chk2Brush" Color="{StaticResource Chk2Color}"/>
+  <SolidColorBrush x:Key="DangerBrush" Color="{StaticResource DangerColor}"/>
+  <SolidColorBrush x:Key="SuccessBrush" Color="{StaticResource SuccessColor}"/>
+
+  <SolidColorBrush x:Key="BadgePicturesBgBrush" Color="{StaticResource BadgePicturesBg}"/>
+  <SolidColorBrush x:Key="BadgePicturesInkBrush" Color="{StaticResource BadgePicturesInk}"/>
+  <SolidColorBrush x:Key="BadgeDocumentsBgBrush" Color="{StaticResource BadgeDocumentsBg}"/>
+  <SolidColorBrush x:Key="BadgeDocumentsInkBrush" Color="{StaticResource BadgeDocumentsInk}"/>
+  <SolidColorBrush x:Key="BadgeAudioBgBrush" Color="{StaticResource BadgeAudioBg}"/>
+  <SolidColorBrush x:Key="BadgeAudioInkBrush" Color="{StaticResource BadgeAudioInk}"/>
+  <SolidColorBrush x:Key="BadgeVideoBgBrush" Color="{StaticResource BadgeVideoBg}"/>
+  <SolidColorBrush x:Key="BadgeVideoInkBrush" Color="{StaticResource BadgeVideoInk}"/>
+  <SolidColorBrush x:Key="BadgeArchivesBgBrush" Color="{StaticResource BadgeArchivesBg}"/>
+  <SolidColorBrush x:Key="BadgeArchivesInkBrush" Color="{StaticResource BadgeArchivesInk}"/>
+  <SolidColorBrush x:Key="BadgeAppsBgBrush" Color="{StaticResource BadgeAppsBg}"/>
+  <SolidColorBrush x:Key="BadgeAppsInkBrush" Color="{StaticResource BadgeAppsInk}"/>
+  <SolidColorBrush x:Key="BadgeFoldersBgBrush" Color="{StaticResource BadgeFoldersBg}"/>
+  <SolidColorBrush x:Key="BadgeFoldersInkBrush" Color="{StaticResource BadgeFoldersInk}"/>
+  <SolidColorBrush x:Key="BadgeOtherBgBrush" Color="{StaticResource BadgeOtherBg}"/>
+  <SolidColorBrush x:Key="BadgeOtherInkBrush" Color="{StaticResource BadgeOtherInk}"/>
+
+  <SolidColorBrush x:Key="{x:Static SystemColors.MenuBrushKey}" Color="{StaticResource PanelColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.MenuBarBrushKey}" Color="{StaticResource PanelColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.MenuTextBrushKey}" Color="{StaticResource TextColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{StaticResource HoverColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="{StaticResource TextColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="{StaticResource Panel2Color}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="{StaticResource TextColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="{StaticResource BgColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.WindowTextBrushKey}" Color="{StaticResource TextColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.GrayTextBrushKey}" Color="{StaticResource DimColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="{StaticResource SelColor}"/>
+  <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="{StaticResource TextColor}"/>
+</ResourceDictionary>

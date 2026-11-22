@@ -1,6 +1,6 @@
-# Mechanics sheet — OmniFind (a file-name search tool in the style of the original)
+# Mechanics sheet — QuickFind (a file-name search tool in the style of the original)
 
-## Window layout (from the OmniFind project: MainWindow.xaml, Themes/Controls.xaml, Dark.xaml, Light.xaml)
+## Window layout (from the QuickFind project: MainWindow.xaml, Themes/Controls.xaml, Dark.xaml, Light.xaml)
 Custom 44 px title bar (logo, menus File/Edit/View/Search/Bookmarks/History/Tools/Help, theme, min/max/close); 236 px sidebar
 (Locations with item counts, Saved searches, Index settings); main column margins 8/16/20/16: tabs row + Inspector toggle,
 search card (radius 16, 60 px input row, Aa/Word/Path/é/.* group, Size and Modified chips), file-type pills + density toggle,

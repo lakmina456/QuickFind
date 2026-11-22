@@ -10,7 +10,7 @@
   "status": "ready",
   "note": "Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.",
   "created_ms": 1794758389740,
-  "updated_ms": 1795174505541,
+  "updated_ms": 1795336718756,
   "checks": [
     {
       "round": 1,
@@ -331,6 +331,70 @@
       "unknowns": [
         "Mechanics behavior has not been measured against app/mechanics.json."
       ]
+    },
+    {
+      "round": 11,
+      "check": "build",
+      "passed": true,
+      "similarity": null,
+      "note": "Build succeeded.",
+      "artifacts": [],
+      "at_ms": 1795198408242
+    },
+    {
+      "round": 11,
+      "check": "app-screenshot",
+      "passed": true,
+      "similarity": null,
+      "note": "The program starts and draws (1280×820).",
+      "artifacts": [
+        "checks\\round-0\\screenshot.png"
+      ],
+      "at_ms": 1795198412120
+    },
+    {
+      "round": 11,
+      "check": "mechanics",
+      "passed": true,
+      "similarity": null,
+      "note": "app/mechanics.json has 28 values (23 with a source, 5 estimated). The sheet is readable; its behavior is unverified. No runtime measurement was compared with these values. A source literal or a core-loop self-test alone cannot establish that the build uses them.",
+      "artifacts": [],
+      "at_ms": 1795198412147,
+      "unknowns": [
+        "Mechanics behavior has not been measured against app/mechanics.json."
+      ]
+    },
+    {
+      "round": 12,
+      "check": "build",
+      "passed": true,
+      "similarity": null,
+      "note": "Build succeeded.",
+      "artifacts": [],
+      "at_ms": 1795336712642
+    },
+    {
+      "round": 12,
+      "check": "app-screenshot",
+      "passed": true,
+      "similarity": null,
+      "note": "The program starts and draws (1280×820).",
+      "artifacts": [
+        "checks\\round-0\\screenshot.png"
+      ],
+      "at_ms": 1795336715375
+    },
+    {
+      "round": 12,
+      "check": "mechanics",
+      "passed": true,
+      "similarity": null,
+      "note": "app/mechanics.json has 28 values (23 with a source, 5 estimated). The sheet is readable; its behavior is unverified. No runtime measurement was compared with these values. A source literal or a core-loop self-test alone cannot establish that the build uses them.",
+      "artifacts": [],
+      "at_ms": 1795336715381,
+      "unknowns": [
+        "Mechanics behavior has not been measured against app/mechanics.json."
+      ]
     }
   ],
   "agent_session": "1ff5c76b-899a-41c3-b74b-cddec19d6067",
@@ -341,7 +405,7 @@
     "tool:build_command_run",
     "tool:native_window_capture"
   ],
-  "last_reply": "I cleared the build folder (`cargo clean`), which was already nearly empty, then rebuilt from scratch. The build and check pass. I left the source, assets and the `shots` screenshot folder alone. The two backups are no longer in the app folder; they are now in `F:\\CraftAnything`, which is a safer place. I did not touch the app's saved file index and settings under your Windows profile, since that is outside the project folder. Say if you want those cleared too.",
+  "last_reply": "The program is now called QuickFind everywhere in the app. That covers the window title, the About text, the tray menu, the program file (now `QuickFind.exe`), the logo file, the saved-data folder name and the start-with-Windows entry. The .NET version's folder, project, files and code are renamed too, to `app\\dotnet\\QuickFind`. Both versions build and the check passes.\n\nTwo leftovers:\n- The .NET build folder still holds an old `OmniFind.exe` that I couldn't delete, next to the new `QuickFind.exe`.\n- If you had \"Start with Windows\" turned on under the old name, switch it off and on again to use the new name.",
   "asset_budget_usd": 5.0,
   "generate_assets": false,
   "decompiled": true

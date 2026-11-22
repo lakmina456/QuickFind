@@ -48,7 +48,7 @@ const RUN_KEY: &str = r"HKCU\Software\Microsoft\Windows\CurrentVersion\Run";
 pub fn startup_enabled() -> bool {
     #[cfg(windows)]
     {
-        quiet(std::process::Command::new("reg").args(["query", RUN_KEY, "/v", "OmniFind"]))
+        quiet(std::process::Command::new("reg").args(["query", RUN_KEY, "/v", "QuickFind"]))
     }
     #[cfg(not(windows))]
     false
@@ -60,10 +60,10 @@ pub fn set_startup(on: bool) {
         if on {
             if let Ok(exe) = std::env::current_exe() {
                 let value = format!("\"{}\"", exe.display());
-                quiet(std::process::Command::new("reg").args(["add", RUN_KEY, "/v", "OmniFind", "/t", "REG_SZ", "/d", &value, "/f"]));
+                quiet(std::process::Command::new("reg").args(["add", RUN_KEY, "/v", "QuickFind", "/t", "REG_SZ", "/d", &value, "/f"]));
             }
         } else {
-            quiet(std::process::Command::new("reg").args(["delete", RUN_KEY, "/v", "OmniFind", "/f"]));
+            quiet(std::process::Command::new("reg").args(["delete", RUN_KEY, "/v", "QuickFind", "/f"]));
         }
     }
     #[cfg(not(windows))]

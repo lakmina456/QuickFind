@@ -23,7 +23,7 @@ impl App {
         let loaded = self.index.read().unwrap().ready;
         let q = self.query.trim();
         if running && indexed == 0 {
-            return Some(("Indexing your drives".into(), "OmniFind is building a fast local catalog. Search will light up as soon as the first pass finishes.".into()));
+            return Some(("Indexing your drives".into(), "QuickFind is building a fast local catalog. Search will light up as soon as the first pass finishes.".into()));
         }
         if !loaded && indexed == 0 {
             return Some(("Loading index".into(), "Reading the cached catalog from disk\u{2026}".into()));

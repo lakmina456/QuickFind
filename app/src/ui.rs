@@ -20,7 +20,7 @@ use std::sync::mpsc::{channel, Receiver, Sender};
 use std::sync::{Arc, RwLock};
 use std::time::{Duration, Instant};
 
-pub const APP_NAME: &str = "OmniFind";
+pub const APP_NAME: &str = "QuickFind";
 
 #[path = "ui_start.rs"]
 mod start;

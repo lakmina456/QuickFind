@@ -1127,3 +1127,76 @@
 11:35:05 done  Check mechanics: app/mechanics.json has 28 values (23 with a source, 5 estimated). The sheet is readable; its behavior is unverified. No runtime measurement was compared with these values. A source literal or a core-loop self-test alone cannot establish that the build uses them.
 11:35:05 stage Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.
 11:35:05 stage Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.
+--- Craft Anything 0.6.1: a run started 2026-11-20 18:10:30 UTC ---
+18:10:30 start core target open
+18:10:30 done  core target open
+18:10:30 stage Getting the builder ready…
+18:10:30 stage Improving the build…
+18:10:31 note  Asking Claude Code…
+18:10:49 start Running dotnet --list-sdks 2>&1; dotnet --version 2>&1 | Select-Object -First 1; Get-Content "F:\work\SaaS\OmniFind\OmniFind\OmniFind.csproj"; (Get-ChildItem "F:\work\SaaS\OmniFind\OmniFind" -Recurse -File -E…
+18:10:54 done  Running dotnet --list-sdks 2>&1; dotnet --version 2>&1 | Select-Object -First 1; Get-Content "F:\work\SaaS\OmniFind\OmniFind\OmniFind.csproj"; (Get-ChildItem "F:\work\SaaS\OmniFind\OmniFind" -Recurse -File -E… (4 s): 11.0.100 [C:\Program Files\dotnet\sdk] 11.0.100 <Project Sdk="Microsoft.NET.Sdk"> <PropertyGroup> <OutputType>WinExe</OutputType> <TargetFramework>net8.0-windows</TargetFramework>
+18:10:58 start Running $src = "F:\work\SaaS\OmniFind\OmniFind"; $dst = "F:\CraftAnything\everything\app\dotnet\OmniFind"
+18:11:12 FAIL  Running $src = "F:\work\SaaS\OmniFind\OmniFind"; $dst = "F:\CraftAnything\everything\app\dotnet\OmniFind" (14 s): Exit code 1 81 Name ---- Assets Core Indexing installer Query Services Themes ViewModels Views F:\CraftAnything\everything\app\dotnet\OmniFind\In
+18:11:16 start Running cd "/f/work/SaaS/OmniFind/OmniFind" && git status --short | head -20; git grep -n "EnsureDirLookup" HEAD -- . | head -3; git log -1 --format=%H%n%ad
+18:11:18 done  Running cd "/f/work/SaaS/OmniFind/OmniFind" && git status --short | head -20; git grep -n "EnsureDirLookup" HEAD -- . | head -3; git log -1 --format=%H%n%ad (2 s): M .vs/OmniFind.slnx/DesignTimeBuild/.dtbcache.v2 M .vs/OmniFind.slnx/v18/.futdcache.v2 M .vs/OmniFind.slnx/v18/.suo M .vs/ProjectEvaluation/omnifind.metadata.v10.bin M .vs/ProjectEvaluation/omnif
+18:11:21 start Running $dst = "F:\CraftAnything\everything\app\dotnet\OmniFind"
+18:11:23 FAIL  Running $dst = "F:\CraftAnything\everything\app\dotnet\OmniFind" (1 s): Auto mode never allows deleting anything outside the project or the temp folder without the person. Find another way, or leave it and say so in your summary. The person can choose to allow it, or to b
+18:11:27 start Running cd "/f/work/SaaS/OmniFind/OmniFind" && git archive HEAD | tar -x -C "/f/CraftAnything/everything/app/dotnet/OmniFind" && cd "/f/CraftAnything/everything/app/dotnet/OmniFind" && git -C "/f/work/SaaS/Om…
+18:11:29 done  Running cd "/f/work/SaaS/OmniFind/OmniFind" && git archive HEAD | tar -x -C "/f/CraftAnything/everything/app/dotnet/OmniFind" && cd "/f/CraftAnything/everything/app/dotnet/OmniFind" && git -C "/f/work/SaaS/Om… (1 s): extra files not in commit: .vs/OmniFind.slnx/DesignTimeBuild/.dtbcache.v2 .vs/OmniFind.slnx/v18/.futdcache.v2 .vs/OmniFind.slnx/v18/.suo .vs/OmniFind.slnx/v18/DocumentLayout.backup.json .vs/OmniFind.s
+18:11:33 start Running cd "/f/CraftAnything/everything/app/dotnet/OmniFind" && dotnet build -c Release 2>&1 | grep -E "error|Warn|Error\(s\)|Elapsed" | head -15
+18:11:38 done  Running cd "/f/CraftAnything/everything/app/dotnet/OmniFind" && dotnet build -c Release 2>&1 | grep -E "error|Warn|Error\(s\)|Elapsed" | head -15 (4 s): 0 Warning(s) 0 Error(s) Time Elapsed 00:00:03.92
+18:11:41 start native window capture: F:\CraftAnything\everything\app\dotnet\OmniFind\bin\Release\net8.0-windows\OmniFind.exe
+18:11:41 start build command run
+18:11:41 start rebuild check
+18:11:52 done  native window capture: F:\CraftAnything\everything\app\dotnet\OmniFind\bin\Release\net8.0-windows\OmniFind.exe (11 s): {"continue_with":"core_evidence_browse","detail":"summary","limit_bytes":81920,"reason":"the complete result is over this connection's response budget; the full record is retained","record":{"carries_
+18:13:27 done  build command run (105 s): {"result":{"command":"cargo build 2>&1","exit_code":0,"ran_in":"app/","stderr":"","stdout":" Compiling proc-macro2 v1.0.107\n Compiling quote v1.0.47\n Compiling unicode-ident v1.0.27\n Compil
+18:13:27 stage The builder is checking its work against the original…
+18:13:27 stage Checking its work (1 of 3): build…
+18:13:28 stage Checking its work (2 of 3): app-screenshot…
+18:13:32 stage Checking its work (3 of 3): mechanics…
+18:13:32 stage The builder checked its work: 2 of 3 checks pass; 1 comparison remains unverified.
+18:13:32 done  rebuild check (111 s): {"result":{"project":"F:\\CraftAnything\\everything","report":"build: passed — Build succeeded.\napp-screenshot: passed — The program starts and draws (1280×820).\nmechanics: passed (incomplete; anoth
+18:13:36 said  I put a .NET 8 version in its own folder, `app\dotnet\OmniFind`. It builds and starts, and it is the OmniFind project from your work folder, not a new port of my Rust app. It already has the same layout and functions, plus fast NTFS indexing. The Rust app builds and passes its check as before.
+18:13:36 said  I used your last committed version, because the working copy in Visual Studio is mid-edit and doesn't compile. Your newer uncommitted edits aren't included. The copy also still holds some old build leftovers (`bin`, `obj`, `.vs`) that I couldn't delete, so you can remove them if you like.
+18:13:36 said  The .NET app builds with `dotnet build -c Release` inside that folder. If you'd rather have a fresh .NET 8 rewrite of the Rust app instead, tell me and I'll do that.
+18:13:36 note  The builder's turn ended (5635125 tokens in, 3940 out)
+18:13:36 stage Checking the build against the original…
+18:13:36 note  Nothing the check looks at has changed since it last worked, so its results stand.
+18:13:36 done  Check build: Build succeeded.
+18:13:36 done  Check app-screenshot: The program starts and draws (1280×820).
+18:13:36 done  Check mechanics: app/mechanics.json has 28 values (23 with a source, 5 estimated). The sheet is readable; its behavior is unverified. No runtime measurement was compared with these values. A source literal or a core-loop self-test alone cannot establish that the build uses them.
+18:13:36 stage Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.
+18:13:37 stage Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.
+--- Craft Anything 0.6.1: a run started 2026-11-22 08:36:45 UTC ---
+08:36:45 start core target open
+08:36:45 done  core target open
+08:36:45 stage Getting the builder ready…
+08:36:46 stage Improving the build…
+08:36:46 note  Asking Claude Code…
+08:37:58 start Running cd /f/CraftAnything/everything/app && grep -rIl -i "omnifind\|quickfind" --exclude-dir=target --exclude-dir=dotnet --exclude-dir=shots . ; echo ---; grep -rIn -i "omnifind\|quickfind" src Cargo.toml m…
+08:37:59 done  Running cd /f/CraftAnything/everything/app && grep -rIl -i "omnifind\|quickfind" --exclude-dir=target --exclude-dir=dotnet --exclude-dir=shots . ; echo ---; grep -rIn -i "omnifind\|quickfind" src Cargo.toml m…: ./Cargo.lock ./Cargo.toml ./MECHANICS.md ./src/index.rs ./src/main.rs ./src/scan.rs ./src/sysinfo.rs ./src/theme.rs ./src/tray.rs ./src/ui.rs ./src/ui_bar.rs ./src/ui_layout.rs --- src/index.rs:265:
+08:38:03 start Running sed -i 's/OmniFind/QuickFind/g; s/Quickfind/QuickFind/g; s/quickfind-pal/quickfind-pal/' src/*.rs MECHANICS.md && mv assets/OmniFind.png assets/QuickFind.png && perl -0pi -e 's/(name = "quickfind"\nve…
+08:38:03 done  Running sed -i 's/OmniFind/QuickFind/g; s/Quickfind/QuickFind/g; s/quickfind-pal/quickfind-pal/' src/*.rs MECHANICS.md && mv assets/OmniFind.png assets/QuickFind.png && perl -0pi -e 's/(name = "quickfind"\nve…: [package] name = "quickfind" version = "0.1.0" edition = "2021" [[bin]] name = "QuickFind" path = "src/main.rs" [dependencies] eframe = { version = "0.31", default-features = false, features = ["def
+08:38:09 start Running Set-Location F:\CraftAnything\everything\app\dotnet
+08:38:11 done  Running Set-Location F:\CraftAnything\everything\app\dotnet (1 s): Name ---- .gitignore app.manifest App.xaml App.xaml.cs AssemblyInfo.cs MainWindow.xaml MainWindow.xaml.
+08:38:13 start Running cd "/f/CraftAnything/everything/app/dotnet/QuickFind" && dotnet build -c Release 2>&1 | grep -E "error|Error\(s\)|Warn" | head; ls bin/Release/net8.0-windows/*.exe; cd /f/CraftAnything/everything/app …
+08:38:31 done  Running cd "/f/CraftAnything/everything/app/dotnet/QuickFind" && dotnet build -c Release 2>&1 | grep -E "error|Error\(s\)|Warn" | head; ls bin/Release/net8.0-windows/*.exe; cd /f/CraftAnything/everything/app … (17 s): 0 Warning(s) 0 Error(s) bin/Release/net8.0-windows/OmniFind.exe bin/Release/net8.0-windows/QuickFind.exe Compiling quickfind v0.1.0 (F:\CraftAnything\everything\app) Finished `dev` prof
+08:38:32 start rebuild check
+08:38:32 stage The builder is checking its work against the original…
+08:38:32 stage Checking its work (1 of 3): build…
+08:38:32 stage Checking its work (2 of 3): app-screenshot…
+08:38:35 stage Checking its work (3 of 3): mechanics…
+08:38:35 stage The builder checked its work: 2 of 3 checks pass; 1 comparison remains unverified.
+08:38:35 done  rebuild check (3 s): {"result":{"project":"F:\\CraftAnything\\everything","report":"build: passed — Build succeeded.\napp-screenshot: passed — The program starts and draws (1280×820).\nmechanics: passed (incomplete; anoth
+08:38:38 said  The program is now called QuickFind everywhere in the app. That covers the window title, the About text, the tray menu, the program file (now `QuickFind.exe`), the logo file, the saved-data folder name and the start-with-Windows entry. The .NET version's folder, project, files and code are renamed too, to `app\dotnet\QuickFind`. Both versions build and the check passes.
+08:38:38 said  Two leftovers:
+08:38:38 said  - The .NET build folder still holds an old `OmniFind.exe` that I couldn't delete, next to the new `QuickFind.exe`.
+08:38:38 said  - If you had "Start with Windows" turned on under the old name, switch it off and on again to use the new name.
+08:38:38 note  The builder's turn ended (4220020 tokens in, 3328 out)
+08:38:38 stage Checking the build against the original…
+08:38:38 note  Nothing the check looks at has changed since it last worked, so its results stand.
+08:38:38 done  Check build: Build succeeded.
+08:38:38 done  Check app-screenshot: The program starts and draws (1280×820).
+08:38:38 done  Check mechanics: app/mechanics.json has 28 values (23 with a source, 5 estimated). The sheet is readable; its behavior is unverified. No runtime measurement was compared with these values. A source literal or a core-loop self-test alone cannot establish that the build uses them.
+08:38:38 stage Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.
+08:38:38 stage Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.

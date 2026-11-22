@@ -26,12 +26,12 @@ pub fn already_running() -> bool {
         use windows_sys::Win32::Foundation::GetLastError;
         use windows_sys::Win32::System::Threading::CreateMutexW;
         use windows_sys::Win32::UI::WindowsAndMessaging::{FindWindowExW, PostMessageW, HWND_MESSAGE};
-        let name: Vec<u16> = "OmniFind.SingleInstance".encode_utf16().chain([0]).collect();
+        let name: Vec<u16> = "QuickFind.SingleInstance".encode_utf16().chain([0]).collect();
         let _h = CreateMutexW(std::ptr::null(), 0, name.as_ptr());
         if GetLastError() != 183 {
             return false; // first copy: the mutex lives until the process ends
         }
-        let class: Vec<u16> = "OmniFindTray".encode_utf16().chain([0]).collect();
+        let class: Vec<u16> = "QuickFindTray".encode_utf16().chain([0]).collect();
         let w = FindWindowExW(HWND_MESSAGE, std::ptr::null_mut(), class.as_ptr(), std::ptr::null());
         if !w.is_null() {
             PostMessageW(w, 0x8000 + 2, 0, 0);
@@ -100,7 +100,7 @@ unsafe extern "system" fn wndproc(
             WM_LBUTTONUP => fire(Event::Show),
             WM_RBUTTONUP => {
                 let menu = CreatePopupMenu();
-                let show: Vec<u16> = "Show OmniFind".encode_utf16().chain([0]).collect();
+                let show: Vec<u16> = "Show QuickFind".encode_utf16().chain([0]).collect();
                 let exit: Vec<u16> = "Exit".encode_utf16().chain([0]).collect();
                 AppendMenuW(menu, MF_STRING, 1, show.as_ptr());
                 AppendMenuW(menu, MF_STRING, 2, exit.as_ptr());
@@ -133,7 +133,7 @@ unsafe fn run() {
     use windows_sys::Win32::UI::WindowsAndMessaging::*;
 
     let hinst = GetModuleHandleW(std::ptr::null());
-    let class: Vec<u16> = "OmniFindTray".encode_utf16().chain([0]).collect();
+    let class: Vec<u16> = "QuickFindTray".encode_utf16().chain([0]).collect();
     let mut wc: WNDCLASSW = std::mem::zeroed();
     wc.lpfnWndProc = Some(wndproc);
     wc.hInstance = hinst;
@@ -153,7 +153,7 @@ unsafe fn run() {
     nid.uFlags = NIF_ICON | NIF_MESSAGE | NIF_TIP;
     nid.uCallbackMessage = WM_TRAY;
     nid.hIcon = LoadIconW(std::ptr::null_mut(), IDI_APPLICATION);
-    for (i, c) in "OmniFind  (Ctrl+Alt+Space)".encode_utf16().enumerate().take(127) {
+    for (i, c) in "QuickFind  (Ctrl+Alt+Space)".encode_utf16().enumerate().take(127) {
         nid.szTip[i] = c;
     }
     Shell_NotifyIconW(NIM_ADD, &nid);
