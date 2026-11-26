@@ -32,11 +32,12 @@ Name: "startup"; Description: "Start QuickFind when Windows starts"; GroupDescri
 
 [Files]
 Source: "..\app\target\release\QuickFind.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\app\assets\QuickFind.ico"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
-Name: "{group}\QuickFind"; Filename: "{app}\QuickFind.exe"
-Name: "{group}\Uninstall QuickFind"; Filename: "{uninstallexe}"
-Name: "{autodesktop}\QuickFind"; Filename: "{app}\QuickFind.exe"; Tasks: desktopicon
+Name: "{group}\QuickFind"; Filename: "{app}\QuickFind.exe"; IconFilename: "{app}\QuickFind.ico"
+Name: "{group}\Uninstall QuickFind"; Filename: "{uninstallexe}"; IconFilename: "{app}\QuickFind.ico"
+Name: "{autodesktop}\QuickFind"; Filename: "{app}\QuickFind.exe"; IconFilename: "{app}\QuickFind.ico"; Tasks: desktopicon
 
 [Registry]
 Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: string; ValueName: "QuickFind"; ValueData: """{app}\QuickFind.exe"""; Flags: uninsdeletevalue; Tasks: startup

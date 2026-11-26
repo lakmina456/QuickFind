@@ -152,7 +152,11 @@ unsafe fn run() {
     nid.uID = 1;
     nid.uFlags = NIF_ICON | NIF_MESSAGE | NIF_TIP;
     nid.uCallbackMessage = WM_TRAY;
-    nid.hIcon = LoadIconW(std::ptr::null_mut(), IDI_APPLICATION);
+    // Prefer the embedded exe icon (resource id 1); fall back to the generic app icon.
+    nid.hIcon = LoadIconW(hinst, 1 as _);
+    if nid.hIcon.is_null() {
+        nid.hIcon = LoadIconW(std::ptr::null_mut(), IDI_APPLICATION);
+    }
     for (i, c) in "QuickFind  (Ctrl+Alt+Space)".encode_utf16().enumerate().take(127) {
         nid.szTip[i] = c;
     }

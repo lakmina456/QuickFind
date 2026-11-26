@@ -231,7 +231,7 @@ cargo build --release
 
 Run the unit tests with `cargo test`.
 
-> The repo pins the GNU toolchain in `app/rust-toolchain.toml` so it builds without Visual Studio. On a machine with the MSVC toolchain you can override it, for example `set RUSTUP_TOOLCHAIN=stable-x86_64-pc-windows-msvc`. Release builds on GitHub Actions use MSVC and embed the app icon.
+> The repo pins the GNU toolchain in `app/rust-toolchain.toml` so it builds without Visual Studio. The app icon is embedded in every Windows build (no `rc.exe` required). On a machine with the MSVC toolchain you can override it, for example `set RUSTUP_TOOLCHAIN=stable-x86_64-pc-windows-msvc`.
 
 ### Publishing a release
 
